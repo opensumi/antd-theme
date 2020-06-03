@@ -85,7 +85,8 @@
     "sort-api": "antd-tools run sort-api-table",
     "start": "antd-tools run clean && cross-env NODE_ENV=development concurrently \"npm run color-less\" \"bisheng start -c ./site/bisheng.config.js\"",
     "tsc": "tsc --noEmit",
-    "version": "node ./scripts/generate-version"
+    "version-old": "node ./scripts/generate-version",
+    "version": "echo 0"
   },
   "husky": {
     "hooks": {
