@@ -38,7 +38,6 @@ function alertBabelConfig(rules) {
 module.exports = {
   port: 8001,
   hash: true,
-  root: process.env.NODE_ENV === 'development' ? '/' : '/antd-kaitian-theme/',
   source: {
     components: './components',
     docs: './docs',
@@ -46,7 +45,7 @@ module.exports = {
     // 'components/form/v3': ['components/form/v3.zh-CN.md', 'components/form/v3.en-US.md'],
     'docs/resources': ['./docs/resources.zh-CN.md', './docs/resources.en-US.md'],
   },
-  output: './dist',
+  output: process.env.NODE_ENV === 'development' ? './_site' : './dist',
   theme: './site/theme',
   htmlTemplate: './site/theme/static/template.html',
   themeConfig,
