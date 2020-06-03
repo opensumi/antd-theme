@@ -38,6 +38,7 @@ function alertBabelConfig(rules) {
 module.exports = {
   port: 8001,
   hash: true,
+  root: process.env.NODE_ENV === 'development' ? '/' : '/antd-kaitian-theme/',
   source: {
     components: './components',
     docs: './docs',
