@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const replaceLib = require('@ant-design/tools/lib/replaceLib');
 const getWebpackConfig = require('@ant-design/tools/lib/getWebpackConfig');
 const EsbuildPlugin = require('esbuild-webpack-plugin').default;
@@ -108,8 +109,23 @@ module.exports = {
 
     delete config.module.noParse;
 
-    // add more entry
-    config.entry.basementPublichPath = path.resolve(__dirname, './basement-publicPath.js');
+    if (!isDev) {
+      // dangerously inject `__webpack_public_path__` to bisheng entry
+      const defaultBsEntry = require.resolve('bisheng/tmp/entry.index.js');
+      if (fs.existsSync(defaultBsEntry)) {
+        const defaultBsEntryContent = fs.readFileSync(defaultBsEntry, 'utf-8');
+        const injectedEntryContent = `
+  __webpack_public_path__ = window.publicPath || '/';
+  ${defaultBsEntryContent.replace('"use strict";', '')}
+        `.trim();
+        fs.writeFileSync(defaultBsEntry, injectedEntryContent, 'utf-8');
+        // eslint-disable-next-line no-console
+        console.warn('Dangerously inject `__webpack_public_path__` to bisheng entry');
+      } else {
+        // eslint-disable-next-line no-console
+        console.warn('Cannot found bisheng/tmp/entry.index.js');
+      }
+    }
 
     return config;
   },
