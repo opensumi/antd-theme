@@ -108,6 +108,9 @@ module.exports = {
 
     delete config.module.noParse;
 
+    // add more entry
+    config.entry.basementPublichPath = path.resolve(__dirname, './basement-publicPath.js');
+
     return config;
   },
 
