@@ -9,8 +9,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import 'moment/locale/zh-cn';
 import { ConfigProvider } from 'antd';
 
-// FIXME: why babel-plugin-import doesn't works
-import 'antd/dist/antd.less';
+import './ide-theme.less';
 
 // eslint-disable-next-line import/no-unresolved
 import zhCN from 'antd/es/locale/zh_CN';

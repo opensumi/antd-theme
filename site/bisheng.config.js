@@ -22,14 +22,6 @@ function alertBabelConfig(rules) {
       );
       // Add babel-plugin-add-react-displayname
       rule.options.plugins.push(require.resolve('babel-plugin-add-react-displayname'));
-      // Add babel-plugin-import
-      rule.options.plugins.push([
-        require.resolve('babel-plugin-import'),
-        {
-          libraryName: 'antd',
-          style: true, // or 'css'
-        },
-      ]);
     } else if (rule.use) {
       alertBabelConfig(rule.use);
     }
@@ -67,6 +59,11 @@ module.exports = {
   },
   lessConfig: {
     javascriptEnabled: true,
+    // lessOptions: {
+    //   // eslint-disable-next-line global-require
+    //   modifyVars: require('../ide-theme'),
+    //   javascriptEnabled: true,
+    // },
   },
   webpackConfig(config) {
     config.resolve.alias = {
