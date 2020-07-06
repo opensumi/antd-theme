@@ -9,7 +9,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import 'moment/locale/zh-cn';
 import { ConfigProvider } from 'antd';
 
-import './ide-theme.less';
+import '../../../../src/antd-ide-theme.less';
 
 // eslint-disable-next-line import/no-unresolved
 import zhCN from 'antd/es/locale/zh_CN';
