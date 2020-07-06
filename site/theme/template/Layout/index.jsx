@@ -53,6 +53,7 @@ const SITE_THEME_STORE_KEY = 'site-theme';
 // for dark.css timestamp to remove cache
 const timestamp = new Date().getTime();
 const themeMap = {
+  light: `/light.css?${timestamp}`,
   dark: `/dark.css?${timestamp}`,
   compact: `/compact.css?${timestamp}`,
 };

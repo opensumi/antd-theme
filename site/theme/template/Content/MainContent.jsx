@@ -290,7 +290,7 @@ class MainContent extends Component {
     return (
       <Menu onClick={({ key }) => this.changeThemeMode(key)} selectedKeys={[theme]}>
         {[
-          { type: 'default', text: formatMessage({ id: 'app.theme.switch.default' }) },
+          { type: 'light', text: formatMessage({ id: 'app.theme.switch.light' }) },
           { type: 'dark', text: formatMessage({ id: 'app.theme.switch.dark' }) },
           { type: 'compact', text: formatMessage({ id: 'app.theme.switch.compact' }) },
         ].map(({ type, text }) => (

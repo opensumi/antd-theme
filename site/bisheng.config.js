@@ -36,7 +36,7 @@ module.exports = {
     docs: './docs',
     // changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
     // 'components/form/v3': ['components/form/v3.zh-CN.md', 'components/form/v3.en-US.md'],
-    'docs/resources': ['./docs/resources.zh-CN.md', './docs/resources.en-US.md'],
+    // 'docs/resources': ['./docs/resources.zh-CN.md', './docs/resources.en-US.md'],
   },
   output: process.env.NODE_ENV === 'development' ? './_site' : './dist',
   theme: './site/theme',

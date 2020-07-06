@@ -64,7 +64,7 @@
     "sort": "npx sort-package-json",
     "sort-api": "antd-tools run sort-api-table",
     "site:start": "bisheng start -c ./site/bisheng.config.js",
-    "start": "antd-tools run clean && cross-env NODE_ENV=development concurrently \"npm run color-less\" \"npm run site:start\"",
+    "start": "cross-env NODE_ENV=development concurrently \"gulp color-theme\" \"npm run site:start\"",
     "tsc": "tsc --noEmit",
     "version-old": "node ./scripts/generate-version",
     "version": "echo 0"

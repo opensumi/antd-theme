@@ -3,12 +3,11 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import classNames from 'classnames';
 import { UnorderedListOutlined } from '@ant-design/icons';
 import { Select, Row, Col, Popover, Button } from 'antd';
+import * as antdPkg from 'antd/package.json';
 
 import * as utils from '../../utils';
-import { version as antdVersion } from '../../../../../package.json';
 import Logo from './Logo';
 import SearchBox from './SearchBox';
-import More from './More';
 import Navigation from './Navigation';
 import Github from './Github';
 import SiteContext from '../SiteContext';
@@ -17,8 +16,6 @@ import './index.less';
 
 const RESPONSIVE_XS = 1120;
 const RESPONSIVE_SM = 1200;
-
-const { Option } = Select;
 
 let docsearch: any;
 if (typeof window !== 'undefined') {
@@ -178,15 +175,8 @@ class Header extends React.Component<HeaderProps, HeaderState> {
           const { direction } = this.context;
           const {
             location,
-            themeConfig,
             intl: { locale },
           } = this.props;
-          const docVersions = { [antdVersion]: antdVersion, ...themeConfig.docVersions };
-          const versionOptions = Object.keys(docVersions).map(version => (
-            <Option value={docVersions[version]} key={version}>
-              {version}
-            </Option>
-          ));
 
           const pathname = location.pathname.replace(/(^\/|\/$)/g, '');
 
@@ -240,13 +230,11 @@ class Header extends React.Component<HeaderProps, HeaderState> {
               key="version"
               className="version"
               size="small"
-              defaultValue={antdVersion}
+              defaultValue={antdPkg.version}
               onChange={this.handleVersionChange}
               dropdownStyle={this.getDropdownStyle()}
               getPopupContainer={trigger => trigger.parentNode}
-            >
-              {versionOptions}
-            </Select>,
+            />,
             <Button
               size="small"
               onClick={this.onLangChange}
@@ -263,7 +251,6 @@ class Header extends React.Component<HeaderProps, HeaderState> {
             >
               {this.getNextDirectionText()}
             </Button>,
-            <More key="more" {...sharedProps} />,
             <Github key="github" responsive={responsive} />,
           ];
 
