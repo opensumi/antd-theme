@@ -8,7 +8,12 @@ const less = require('gulp-less');
 const rename = require('gulp-rename');
 const prettier = require('gulp-prettier');
 const lessToJs = require('gulp-less-variables-to-file');
+const LessAutoprefix = require('less-plugin-autoprefix');
+const cssnano = require('gulp-cssnano');
+const LessNpmImport = require('less-plugin-npm-import');
 const addLessImportInline = require('./scripts/gulp-add-less-inline-import');
+
+const pkg = require('./package.json');
 
 const sourceFile = path.resolve(__dirname, './src/index.less');
 
@@ -23,6 +28,25 @@ gulp.task('less', () => {
     .pipe(lessToJs())
     .pipe(rename('theme.js'))
     .pipe(prettier())
+    .pipe(gulp.dest('./lib'));
+});
+
+const antdIdeThemeFile = path.resolve(__dirname, './src/antd-ide-theme.less');
+
+gulp.task('theme', () => {
+  return gulp
+    .src(antdIdeThemeFile)
+    .pipe(
+      less({
+        javascriptEnabled: true,
+        plugins: [
+          new LessNpmImport({ prefix: '~' }),
+          new LessAutoprefix({ browsers: pkg.browserslist }),
+        ],
+      }),
+    )
+    .pipe(prettier())
+    .pipe(cssnano())
     .pipe(gulp.dest('./lib'));
 });
 
