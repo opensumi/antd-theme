@@ -8,7 +8,7 @@
 
 <div align="center">
 
-An enterprise-class UI design language and React UI library.
+一套企业级 UI 设计语言和 React 组件库。
 
 [![CircleCI status][circleci-image]][circleci-url] [![CI status][github-action-image]][github-action-url] [![codecov][codecov-image]][codecov-url] [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url]
 
@@ -47,40 +47,40 @@ An enterprise-class UI design language and React UI library.
 
 </div>
 
-[![](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Yl83RJhUE7kAAAAAAAAAAABkARQnAQ)](https://ant.design)
+[![](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Ey3wTo-5__QAAAAAAAAAAABkARQnAQ)](https://ant.design/index-cn)
 
-English | [Português](./README-pt_BR.md) | [简体中文](./README-zh_CN.md)
+[English](./README.md) | [Português](./README-pt_BR.md) | 简体中文
 
-## ✨ Features
+## ✨ 特性
 
-- 🌈 Enterprise-class UI designed for web applications.
-- 📦 A set of high-quality React components out of the box.
-- 🛡 Written in TypeScript with predictable static types.
-- ⚙️ Whole package of design resources and development tools.
-- 🌍 Internationalization support for dozens of languages.
-- 🎨 Powerful theme customization in every detail.
+- 🌈 提炼自企业级中后台产品的交互语言和视觉风格。
+- 📦 开箱即用的高质量 React 组件。
+- 🛡 使用 TypeScript 开发，提供完整的类型定义文件。
+- ⚙️ 全链路开发和设计工具体系。
+- 🌍 数十个国际化语言支持。
+- 🎨 深入每个细节的主题定制能力。
 
-## 🖥 Environment Support
+## 🖥 兼容环境
 
-- Modern browsers and Internet Explorer 11 (with [polyfills](https://stackoverflow.com/questions/57020976/polyfills-in-2019-for-ie11))
-- Server-side Rendering
+- 现代浏览器和 IE11（需要 [polyfills](https://ant.design/docs/react/getting-started-cn#兼容性)）。
+- 支持服务端渲染。
 - [Electron](https://www.electronjs.org/)
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png" alt="Electron" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Electron |
 | --- | --- | --- | --- | --- |
 | IE11, Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-## 📦 Install
+## 📦 安装
 
 ```bash
-npm install antd
+npm install antd --save
 ```
 
 ```bash
 yarn add antd
 ```
 
-## 🔨 Usage
+## 🔨 示例
 
 ```jsx
 import { Button, DatePicker } from 'antd';
@@ -88,57 +88,62 @@ import { Button, DatePicker } from 'antd';
 const App = () => (
   <>
     <Button type="primary">PRESS ME</Button>
-    <DatePicker placeholder="select date" />
+    <DatePicker />
   </>
 );
 ```
 
-And import style manually:
+引入样式：
 
 ```jsx
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 ```
 
-### TypeScript
+### 🌈 定制主题
 
-`antd` is written in TypeScript with complete definitions, check [Use in TypeScript](https://ant.design/docs/react/use-in-typescript) to getting started.
+参考 [定制主题](https://ant.design/docs/react/customize-theme-cn) 文档。
 
-## 🌍 Internationalization
+### 🛡 TypeScript
 
-Dozens of languages supported in `antd`, see [i18n](https://ant.design/docs/react/i18n).
+参考 [在 TypeScript 中使用](https://ant.design/docs/react/use-in-typescript-cn)。
 
-## 🔗 Links
+## 🌍 国际化
 
-- [Home page](https://ant.design/)
-- [Components](https://ant.design/components/overview)
+参考 [国际化文档](https://ant.design/docs/react/i18n-cn)。
+
+## 🔗 链接
+
+- [首页](https://ant.design/)
+- [组件库](https://ant.design/components/overview-cn)
 - [Ant Design Pro](http://pro.ant.design/)
 - [Ant Design Charts](https://charts.ant.design)
-- [Change Log](CHANGELOG.en-US.md)
-- [rc-components](http://react-component.github.io/)
-- [Mobile UI](http://mobile.ant.design)
-- [Ant Design Icons](https://github.com/ant-design/ant-design-icons)
-- [Ant Design Colors](https://github.com/ant-design/ant-design-colors)
-- [Ant Design Pro Layout](https://github.com/ant-design/ant-design-pro-layout)
-- [Ant Design Pro Blocks](https://github.com/ant-design/pro-blocks)
+- [更新日志](CHANGELOG.en-US.md)
+- [React 底层基础组件](http://react-component.github.io/)
+- [移动端组件](http://mobile.ant.design)
+- [Ant Design 图标](https://github.com/ant-design/ant-design-icons)
+- [Ant Design 色彩](https://github.com/ant-design/ant-design-colors)
+- [Ant Design Pro 布局组件](https://github.com/ant-design/ant-design-pro-layout)
+- [Ant Design Pro 区块集](https://github.com/ant-design/pro-blocks)
 - [Dark Theme](https://github.com/ant-design/ant-design-dark-theme)
-- [Landing Pages](https://landing.ant.design)
-- [Motion](https://motion.ant.design)
-- [Scaffold Market](http://scaffold.ant.design)
-- [Developer Instruction](https://github.com/ant-design/ant-design/wiki/Development)
-- [Versioning Release Note](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
-- [FAQ](https://ant.design/docs/react/faq)
-- [CodeSandbox Template](https://u.ant.design/codesandbox-repro) for bug reports
+- [首页模板集](https://landing.ant.design)
+- [动效](https://motion.ant.design)
+- [脚手架市场](http://scaffold.ant.design)
+- [设计规范速查手册](https://github.com/ant-design/ant-design/wiki/Ant-Design-%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E7%AE%80%E7%89%88)
+- [开发者说明](https://github.com/ant-design/ant-design/wiki/Development)
+- [版本发布规则](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
+- [常见问题](https://ant.design/docs/react/faq-cn)
+- [CodeSandbox 模板](https://u.ant.design/codesandbox-repro) for bug reports
 - [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design)
-- [Customize Theme](https://ant.design/docs/react/customize-theme)
-- [How to Apply for Being A Collaborator](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator)
+- [定制主题](https://ant.design/docs/react/customize-theme-cn)
+- [成为社区协作成员](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator)
 
-## ⌨️ Development
+## ⌨️ 本地开发
 
-Use Gitpod, a free online dev environment for GitHub.
+你可以使用 Gitpod 进行在线开发：
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ant-design/ant-design)
 
-Or clone locally:
+或者克隆到本地开发:
 
 ```bash
 $ git clone git@github.com:ant-design/ant-design.git
@@ -147,20 +152,28 @@ $ npm install
 $ npm start
 ```
 
-Open your browser and visit http://127.0.0.1:8001 , see more at [Development](https://github.com/ant-design/ant-design/wiki/Development).
+打开浏览器访问 http://127.0.0.1:8001 ，更多[本地开发文档](https://github.com/ant-design/ant-design/wiki/Development)。
 
-## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+## 🤝 参与共建 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Read our [contributing guide](https://ant.design/docs/react/contributing) and let's build a better antd together.
+请参考[贡献指南](https://ant.design/docs/react/contributing-cn).
 
-We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/ant-design/ant-design/pulls) or as [GitHub issues](https://github.com/ant-design/ant-design/issues). If you'd like to improve code, check out the [Development Instructions](https://github.com/ant-design/ant-design/wiki/Development) and have a good time! :)
-
-If you are a collaborator, please follow our [Pull Request principle](https://github.com/ant-design/ant-design/wiki/PR-principle) to create a Pull Request by [collaborator template](https://github.com/ant-design/ant-design/compare?expand=1&template=collaborator.md).
+> 强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
 
 [![Let's fund issues in this repository](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/repos/34526884)
 
-## ❤️ Sponsors and Backers [![](https://opencollective.com/ant-design/tiers/sponsors/badge.svg?label=Sponsors&color=brightgreen)](https://opencollective.com/ant-design#support) [![](https://opencollective.com/ant-design/tiers/backers/badge.svg?label=Backers&color=brightgreen)](https://opencollective.com/ant-design#support)
+## 👥 社区互助
 
-[![](https://opencollective.com/ant-design/tiers/sponsors.svg?avatarHeight=36)](https://opencollective.com/ant-design#support)
+如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助，同时我们也鼓励资深用户通过下面的途径给新人提供帮助。
+
+通过 Stack Overflow 或者 Segment Fault 提问时，建议加上 `antd` 标签。
+
+1. [Stack Overflow](http://stackoverflow.com/questions/tagged/antd)（英文）
+2. [Segment Fault](https://segmentfault.com/t/antd)（中文）
+3. [![Join the chat at https://gitter.im/ant-design/ant-design](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ant-design/ant-design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+## ❤️ 赞助者 ![](https://opencollective.com/ant-design/tiers/backers/badge.svg?label=Backers&color=brightgreen) ![](https://opencollective.com/ant-design/tiers/sponsors/badge.svg?label=Sponsors&color=brightgreen)
 
 [![](https://opencollective.com/ant-design/tiers/backers.svg?avatarHeight=36)](https://opencollective.com/ant-design#support)
+
+[![](https://opencollective.com/ant-design/tiers/sponsors.svg?avatarHeight=36)](https://opencollective.com/ant-design#support)
