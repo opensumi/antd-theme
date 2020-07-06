@@ -3,6 +3,7 @@ module.exports = {
   messages: {
     'app.theme.switch.default': 'Default theme',
     'app.theme.switch.dark': 'Dark theme',
+    'app.theme.switch.light': 'Light theme',
     'app.theme.switch.compact': 'Compact theme',
     'app.header.search': 'Search...',
     'app.header.menu.documentation': 'Docs',

@@ -25,3 +25,12 @@ gulp.task('less', () => {
     .pipe(prettier())
     .pipe(gulp.dest('./lib'));
 });
+
+gulp.task('color-theme', () => {
+  return gulp
+    .src([
+      path.resolve(__dirname, './color-theme/light.css'),
+      path.resolve(__dirname, './color-theme/dark.css'),
+    ])
+    .pipe(gulp.dest('./_site'));
+});
