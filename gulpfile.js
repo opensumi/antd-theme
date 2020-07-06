@@ -8,7 +8,7 @@ const less = require('gulp-less');
 const rename = require('gulp-rename');
 const prettier = require('gulp-prettier');
 const lessToJs = require('gulp-less-variables-to-file');
-const addLessImportInline = require('./scripts/add-less-inline-import');
+const addLessImportInline = require('./scripts/gulp-add-less-inline-import');
 
 const sourceFile = path.resolve(__dirname, './src/index.less');
 
