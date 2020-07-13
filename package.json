@@ -1,7 +1,7 @@
 {
   "name": "@alipay/antd-kaitian-theme",
   "version": "1.0.0-alpha.1",
-  "description": "Kaitian theme override for antd4",
+  "description": "Kaitian theme for antd4",
   "keywords": [
     "antd custom theme",
     "kaitian theme"
@@ -20,12 +20,12 @@
   ],
   "main": "lib/theme.js",
   "scripts": {
-    "bundle": "gulp less && gulp theme",
-    "prepublishOnly": "npm run bundle",
-    "build": "gulp color-theme && npm run site",
+    "compile": "gulp less && gulp theme",
+    "prepublishOnly": "npm run compile",
     "prettier": "prettier -c --write '**/*'",
     "pretty-quick": "pretty-quick",
     "site": "bisheng start -c ./site/bisheng.config.js",
+    "build": "gulp color-theme && npm run site",
     "start": "cross-env NODE_ENV=development concurrently \"gulp color-theme\" \"npm run site\""
   },
   "browserslist": [
