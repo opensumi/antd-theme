@@ -47,6 +47,7 @@ gulp.task('theme', () => {
     )
     .pipe(prettier())
     .pipe(cssnano())
+    .pipe(rename('index.css'))
     .pipe(gulp.dest('./lib'));
 });
 
