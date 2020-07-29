@@ -1,2 +1,57 @@
-@btn-primary-bg: var(--kt-primaryButton-background);
+// AntD 主题定制文档
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less#L418
+
+// Cloud IDE Token 文档
+// https://yuque.antfin-inc.com/ide-framework/ide-token/button
+
+// 在 AntD 的设计里面，按钮有 8 中情况
+// - 四种类型: 主按钮、次按钮、虚线按钮、链接按钮
+// - 两种属性: 无属性、危险属性
+
+// Primary Button 主按钮
+// 主按钮的前景色
 @btn-primary-color: var(--kt-primaryButton-foreground);
+// 主按钮的背景色
+@btn-primary-bg: var(--kt-primaryButton-background);
+// 主按钮的覆盖颜色
+.ant-btn-primary {
+  // https://github.com/ant-design/ant-design/blob/master/components/button/style/mixin.less#L282
+  &:hover,
+  &:focus {
+    // 危险按钮的 hover 色
+    background-color: var(--kt-primaryButton-hoverBackground);
+    border-color: var(--kt-primaryButton-hoverBackground);
+  }
+  // https://github.com/ant-design/ant-design/blob/master/components/button/style/mixin.less#L296
+  &:active {
+    // 危险按钮的点击色
+    background-color: var(--kt-primaryButton-clickBackground);
+    border-color: var(--kt-primaryButton-clickBackground);
+  }
+}
+
+// Danger Button 危险按钮
+// 危险按钮的前景色
+@btn-danger-color: var(--kt-dangerButton-foreground);
+// 危险按钮的背景色
+@btn-danger-bg: var(--kt-dangerButton-background);
+@btn-danger-border: var(--kt-dangerButton-background);
+
+// 在危险属性下面的一些覆盖色值
+.ant-btn-dangerous {
+  &.ant-btn-primary {
+    &:hover,
+    &:focus {
+      // https://github.com/ant-design/ant-design/blob/master/components/button/style/mixin.less#L276
+      // 危险按钮的 hover 色
+      background-color: var(--kt-dangerButton-hoverBackground);
+      border-color: var(--kt-dangerButton-hoverBackground);
+    }
+    &:active {
+      // https://github.com/ant-design/ant-design/blob/master/components/button/style/mixin.less#L276
+      // 危险按钮的点击色
+      background-color: var(--kt-dangerButton-clickBackground);
+      border-color: var(--kt-dangerButton-clickBackground);
+    }
+  }
+}

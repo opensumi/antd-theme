@@ -1,0 +1,25 @@
+// AntD 主题定制文档
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less#L418
+
+// Cloud IDE Token 文档
+// https://yuque.antfin-inc.com/ide-framework/ide-token/checkbox
+
+// 多选框的背景色
+@checkbox-check-bg: var(--checkbox-background);
+// 多选框边框
+.ant-checkbox-inner {
+  border-color: var(--checkbox-border);
+}
+// 多选框 hover 时的描边色
+@checkbox-color: var(--kt-checkbox-hoverBorder);
+// 多选框选中时的前景色和背景色
+.ant-checkbox-checked .ant-checkbox-inner {
+  // https://github.com/ant-design/ant-design/blob/master/components/checkbox/style/mixin.less#L108
+  color: var(--kt-checkbox-selectionForeground);
+  background-color: var(--kt-checkbox-selectionBackground);
+}
+// 失效时候的前景色和背景色
+.ant-checkbox-disabled .ant-checkbox-inner {
+  color: var(--kt-checkbox-disableForeground);
+  background-color: var(--kt-checkbox-disableBackground);
+}
