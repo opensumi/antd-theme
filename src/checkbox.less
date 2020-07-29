@@ -13,13 +13,18 @@
 // 多选框 hover 时的描边色
 @checkbox-color: var(--kt-checkbox-hoverBorder);
 // 多选框选中时的前景色和背景色
-.@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-inner {
-  // https://github.com/ant-design/ant-design/blob/master/components/checkbox/style/mixin.less#L108
-  color: var(--kt-checkbox-selectionForeground);
-  background-color: var(--kt-checkbox-selectionBackground);
+.@{ant-prefix}-checkbox-checked {
+  .@{ant-prefix}-checkbox-inner {
+    // https://github.com/ant-design/ant-design/blob/master/components/checkbox/style/mixin.less#L108
+    color: var(--kt-checkbox-selectionForeground);
+    background-color: var(--kt-checkbox-selectionBackground);
+  }
 }
 // 失效时候的前景色和背景色
-.@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
-  color: var(--kt-checkbox-disableForeground);
-  background-color: var(--kt-checkbox-disableBackground);
+.@{ant-prefix}-checkbox-disabled {
+  .@{ant-prefix}-checkbox-inner {
+    // https://github.com/ant-design/ant-design/blob/master/components/checkbox/style/mixin.less#L113
+    color: var(--kt-checkbox-disableForeground);
+    background-color: var(--kt-checkbox-disableBackground);
+  }
 }
