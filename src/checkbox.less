@@ -7,19 +7,19 @@
 // 多选框的背景色
 @checkbox-check-bg: var(--checkbox-background);
 // 多选框边框
-.ant-checkbox-inner {
+.@{ant-prefix}-checkbox-inner {
   border-color: var(--checkbox-border);
 }
 // 多选框 hover 时的描边色
 @checkbox-color: var(--kt-checkbox-hoverBorder);
 // 多选框选中时的前景色和背景色
-.ant-checkbox-checked .ant-checkbox-inner {
+.@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-inner {
   // https://github.com/ant-design/ant-design/blob/master/components/checkbox/style/mixin.less#L108
   color: var(--kt-checkbox-selectionForeground);
   background-color: var(--kt-checkbox-selectionBackground);
 }
 // 失效时候的前景色和背景色
-.ant-checkbox-disabled .ant-checkbox-inner {
+.@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
   color: var(--kt-checkbox-disableForeground);
   background-color: var(--kt-checkbox-disableBackground);
 }
