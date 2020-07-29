@@ -2,7 +2,15 @@
 
 ## Usage
 
-### less-loader
+### css external
+
+```js
+import '@alipay/antd-kaitian-theme/lib/index.css';
+```
+
+### [Deprecated] less-loader
+
+由于 antd 的设计体系和 kaitian 主题的设计体系存在一定差异，因此仅通过 less vars 无法覆盖到局部细节，如 `@text-color` 等，因此这种用法不可行
 
 ```js
 {
@@ -16,12 +24,6 @@
 }
 ```
 
-### css external
-
-```js
-import '@alipay/antd-kaitian-theme/lib/index.css';
-```
-
 ## Developement
 
 - 找到你要覆盖的 antd 组件
@@ -33,3 +35,4 @@ import '@alipay/antd-kaitian-theme/lib/index.css';
 
 - `antd.less` 基本涵盖 antd 中所有的变量和值，可供快速参考查阅
 - 更完整的 antd 的 less 变量请参见 antd repo 源码
+- https://yuque.antfin-inc.com/ide-framework/ide-token
