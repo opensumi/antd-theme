@@ -17,6 +17,7 @@ const pkg = require('./package.json');
 
 const sourceFile = path.resolve(__dirname, './src/index.less');
 
+// deprecated: 由于存在 hardcode 性质的 override 因此不再提供 less 输出
 gulp.task('less', () => {
   return gulp
     .src(sourceFile)

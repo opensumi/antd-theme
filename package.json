@@ -20,7 +20,7 @@
   ],
   "main": "lib/theme.js",
   "scripts": {
-    "compile": "rm -rf lib && gulp less && gulp theme",
+    "compile": "rm -rf lib && gulp theme",
     "prepublishOnly": "npm run compile",
     "prettier": "prettier -c --write '**/*'",
     "pretty-quick": "pretty-quick",
