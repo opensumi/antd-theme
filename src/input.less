@@ -28,11 +28,12 @@
   box-shadow: none;
 }
 // 输入框失效文本颜色（前景色）
-@input-disabled-color: var(--kt-input-disableForegroun);
+@input-disabled-color: var(--kt-input-disableForeground);
 // 输入框失效背景色
 @input-disabled-bg: var(--kt-input-disableBackground);
 // 输入框选中文本的背景色
 .ant-input::selection {
+  // AntD 没有定义这个值，这是 IDE 团队新增的
   background-color: var(--kt-input-selectionBackground);
 }
 
