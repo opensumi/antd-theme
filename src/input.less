@@ -1,0 +1,39 @@
+// AntD 主题定制文档
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less#L418
+
+// Cloud IDE Token 文档
+// https://yuque.antfin-inc.com/ide-framework/ide-token/input
+
+// 输入框的字体颜色（前景色）
+@input-color: var(--input-foreground);
+// 输入框的背景颜色
+@input-bg: var(--input-background);
+// @input-addon-bg: var(--input-background); // 使用外层颜色，保持一致
+.ant-input-affix-wrapper > input.ant-input {
+  // 在有外层 wrapper 的情况下让 input 的背景色使用上层的，防止透明度导致的叠加
+  background-color: transparent;
+}
+// 输入框占位文字的颜色
+@input-placeholder-color: var(--input-placeholderForeground);
+// 输入框的边框颜色
+@input-border-color: var(--kt-input-border);
+// 输入框 hover 或者 focus 之后的边框颜色
+@input-hover-border-color: var(--focusBorder);
+// 输入框 focus 之后的边框颜色
+.ant-input:focus, 
+.ant-input-focused {
+  // https://github.com/ant-design/ant-design/blob/master/components/input/style/mixin.less#L70
+  // https://github.com/ant-design/ant-design/blob/master/components/input/style/mixin.less#L18
+  border-color: var(--focusBorder);
+  box-shadow: none;
+}
+// 输入框失效文本颜色（前景色）
+@input-disabled-color: var(--kt-input-disableForeground);
+// 输入框失效背景色
+@input-disabled-bg: var(--kt-input-disableBackground);
+// 输入框选中文本的背景色
+.ant-input::selection {
+  // AntD 没有定义这个值，这是 IDE 团队新增的
+  background-color: var(--kt-input-selectionBackground);
+}
+
