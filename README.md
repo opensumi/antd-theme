@@ -14,7 +14,7 @@ import { ConfigProvider } from 'antd';
 // ...
 
 return (
-  <ConfigProvider prefixCls="ide">
+  <ConfigProvider prefixCls="ide-antd">
     <App />
   </ConfigProvider>
 );
