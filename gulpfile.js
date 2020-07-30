@@ -55,8 +55,17 @@ gulp.task('theme', () => {
 gulp.task('color-theme', () => {
   return gulp
     .src([
-      path.resolve(__dirname, './color-theme/light.css'),
-      path.resolve(__dirname, './color-theme/dark.css'),
+      path.resolve(__dirname, './color-theme/light.less'),
+      path.resolve(__dirname, './color-theme/dark.less'),
     ])
+    .pipe(
+      less({
+        javascriptEnabled: true,
+        plugins: [
+          new LessNpmImport({ prefix: '~' }),
+          new LessAutoprefix({ browsers: pkg.browserslist }),
+        ],
+      }),
+    )
     .pipe(gulp.dest('./_site'));
 });
