@@ -1,5 +1,7 @@
 # antd ide theme
 
+> Powered by antd4
+
 ## Usage
 
 ### css external
