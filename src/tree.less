@@ -1,0 +1,15 @@
+// Tree
+// ---
+// https://yuque.antfin-inc.com/ide-framework/ide-token/tree
+@tree-bg: transparent;
+@tree-directory-selected-color: var(--kt-tree-activeSelectionForeground);
+@tree-directory-selected-bg: var(--tree-selectionBackground);
+@tree-node-hover-bg: var(--tree-hoverBackground);
+@tree-node-selected-bg: var(--tree-selectionBackground);
+
+// override part
+.@{ant-prefix}-tree-show-line .@{ant-prefix}-tree-switcher {
+  // 文件树中箭头的前景色
+  color: var(--descriptionForeground);
+  background-color: var(--editor-background);
+}
