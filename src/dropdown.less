@@ -1,0 +1,48 @@
+// AntD 主题定制文档
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less#L418
+
+// Cloud IDE Token 文档，这部分参考 Select 的下拉选择列表的样式
+// https://yuque.antfin-inc.com/ide-framework/ide-token/select
+
+// 下拉面板的背景色
+@dropdown-menu-bg: var(--kt-selectDropdown-background);
+
+.@{ant-prefix}-dropdown-menu {
+  &-item-group-title {
+    // https://github.com/ant-design/ant-design/blob/master/components/dropdown/style/index.less#L134
+    // 下拉面板中分组文本的前景色
+    color: var(--selectDropdown-teamForeground);
+  }
+
+  &-item,
+  &-submenu-title {
+    // 下拉选项的高度
+    // https://github.com/ant-design/ant-design/blob/master/components/dropdown/style/index.less#L163
+    padding: 4px 8px;
+    height: 26px;
+
+    // 下拉面板的前景色
+    color: var(--kt-selectDropdown-foreground);
+
+    // 下拉项 hover 时的背景色
+    &:hover {
+      background-color: var(--kt-selectDropdown-hoverBackground);
+    }
+
+    // 下拉项点击时候使用选中时候的背景色
+    &:active {
+      background-color: var(--kt-selectDropdown-selectionBackground);
+    }
+
+    // 选中状态的时候的背景色
+    &[data-is-selected="true"] {
+      background-color: var(--kt-selectDropdown-selectionBackground);
+    } 
+
+    // 选项分割线的背景颜色
+    &-divider {
+      // https://github.com/ant-design/ant-design/blob/master/components/dropdown/style/index.less#L236
+      background-color: var(--kt-popover-border);
+    }
+  }
+}
