@@ -19,7 +19,7 @@ import { DownOutlined } from '@ant-design/icons';
 
 const menu = (
   <Menu>
-    <Menu.Item key="0">
+    <Menu.Item key="0" data-is-selected="true">
       <a href="http://www.alipay.com/">1st menu item</a>
     </Menu.Item>
     <Menu.Item key="1">
