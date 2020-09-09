@@ -16,7 +16,8 @@
     "registry": "https://registry.npm.alibaba-inc.com"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "main": "lib/theme.js",
   "scripts": {
