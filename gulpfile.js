@@ -47,8 +47,10 @@ gulp.task('theme', () => {
       }),
     )
     .pipe(prettier())
-    .pipe(cssnano())
     .pipe(rename('index.css'))
+    .pipe(gulp.dest('./lib'))
+    .pipe(cssnano())
+    .pipe(rename('index.min.css'))
     .pipe(gulp.dest('./lib'));
 });
 
