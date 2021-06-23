@@ -1,6 +1,3 @@
-@list-headerBackground: var(--list-headerBackground);
-@icon-foreground: var(--icon-foreground);
-
 // AntD 主题定制文档
 // https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less#L418
 
@@ -16,7 +13,8 @@
     > tr {
       > th {
         color: var(--foreground);
-        background: var(--list-headerBackground);
+        background: var(--sideBarSectionHeader-background);
+        border-bottom-color: var(--kt-select-border);
       }
     }
   }
@@ -29,6 +27,11 @@
         > td {
           background: var(--list-hoverBackground);
         }
+      }
+
+      > td {
+        background-color: var(--editor-background);
+        border-bottom-color: var(--kt-select-border);
       }
 
       &.@{table-prefix-cls}-row-selected {
