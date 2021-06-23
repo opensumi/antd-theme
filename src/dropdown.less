@@ -16,10 +16,10 @@
 
   &-item,
   &-submenu-title {
+    height: 26px;
     // 下拉选项的高度
     // https://github.com/ant-design/ant-design/blob/master/components/dropdown/style/index.less#L163
     padding: 4px 8px;
-    height: 26px;
 
     // 下拉面板的前景色
     color: var(--kt-selectDropdown-foreground);
@@ -35,14 +35,18 @@
     }
 
     // 选中状态的时候的背景色
-    &[data-is-selected="true"] {
+    &[data-is-selected='true'] {
       background-color: var(--kt-selectDropdown-selectionBackground);
-    } 
+    }
 
     // 选项分割线的背景颜色
     &-divider {
       // https://github.com/ant-design/ant-design/blob/master/components/dropdown/style/index.less#L236
       background-color: var(--kt-popover-border);
+    }
+
+    &-selected {
+      background-color: var(--kt-selectDropdown-background);
     }
   }
 }
