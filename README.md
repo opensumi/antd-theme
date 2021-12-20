@@ -1,11 +1,11 @@
-# antd ide theme
+# OpenSumi Ant Design Theme
 
 ## Usage
 
 ### css external
 
 ```js
-import '@alipay/antd-kaitian-theme/lib/index.css';
+import '@opensumi/antd-theme/lib/index.css';
 ```
 
 ```jsx
@@ -14,26 +14,10 @@ import { ConfigProvider } from 'antd';
 // ...
 
 return (
-  <ConfigProvider prefixCls="ide_antd">
+  <ConfigProvider prefixCls="sumi_antd">
     <App />
   </ConfigProvider>
 );
-```
-
-### [Deprecated] less-loader
-
-由于 antd 的设计体系和 kaitian 主题的设计体系存在一定差异，因此仅通过 less vars 无法覆盖到局部细节，如 `@text-color` 等，因此这种用法不可行
-
-```js
-{
-  loader: 'less-loader',
-  options: {
-    javascriptEnabled: true,
-    lessOptions: {
-      modifyVars: require('@alipay/antd-kaitian-theme'),
-    },
-  }
-}
 ```
 
 ## Developement
@@ -47,4 +31,4 @@ return (
 
 - `antd.less` 基本涵盖 antd 中所有的变量和值，可供快速参考查阅
 - 更完整的 antd 的 less 变量请参见 antd repo 源码
-- https://yuque.antfin-inc.com/ide-framework/ide-token
+- https://github.com/opensumi/core/wiki/%E5%9F%BA%E7%A1%80%E9%A2%9C%E8%89%B2

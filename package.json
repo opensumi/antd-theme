@@ -1,20 +1,17 @@
 {
-  "name": "@alipay/antd-kaitian-theme",
-  "version": "1.0.0-beta.13",
-  "description": "Kaitian theme for antd4",
+  "name": "@opensumi/antd-theme",
+  "version": "1.0.0-beta.14",
+  "description": "OpenSumi theme for antd4",
   "keywords": [
     "antd custom theme",
-    "kaitian theme"
+    "OpenSumi theme"
   ],
-  "homepage": "https://code.alipay.com:kaitian-community/antd-kaitian-theme",
+  "homepage": "https://github.com/opensumi/antd-theme",
   "repository": {
     "type": "git",
-    "url": "git@code.alipay.com:kaitian-community/antd-kaitian-theme.git"
+    "url": "git@github.com:opensumi/antd-theme.git"
   },
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://registry.npm.alibaba-inc.com"
-  },
   "files": [
     "lib",
     "src"
