@@ -1,5 +1,7 @@
 # OpenSumi Ant Design Theme
 
+![Theme](./images/antd-theme.png)
+
 ## Usage
 
 ### css external
