@@ -31,4 +31,9 @@ return (
 
 - `antd.less` 基本涵盖 antd 中所有的变量和值，可供快速参考查阅
 - 更完整的 antd 的 less 变量请参见 antd repo 源码
-- https://github.com/opensumi/core/wiki/%E5%9F%BA%E7%A1%80%E9%A2%9C%E8%89%B2
+- [Open Sumi Tokens 表](https://github.com/opensumi/core/wiki/%E5%9F%BA%E7%A1%80%E9%A2%9C%E8%89%B2)
+
+### Thank You
+
+- [vagusX](https://github.com/vagusX)
+- [joooye1991](https://github.com/joooye1991)
