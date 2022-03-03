@@ -21,10 +21,11 @@
   }
 }
 // 失效时候的前景色和背景色
-.@{ant-prefix}-checkbox-disabled {
+.@{ant-prefix}-checkbox.@{ant-prefix}-checkbox-disabled {
   .@{ant-prefix}-checkbox-inner {
     // https://github.com/ant-design/ant-design/blob/master/components/checkbox/style/mixin.less#L113
     color: var(--kt-checkbox-disableForeground);
     background-color: var(--kt-checkbox-disableBackground);
+    border-color: var(--checkbox-border) !important;
   }
 }
