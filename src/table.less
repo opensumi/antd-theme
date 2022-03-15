@@ -27,7 +27,7 @@
     > tr {
       &.@{table-prefix-cls}-row:hover {
         > td {
-          background: var(--list-hoverBackground);
+          background: var(--list-inactiveSelectionBackground);
         }
       }
 
@@ -39,14 +39,14 @@
       &.@{table-prefix-cls}-row-selected {
         > td {
           color: var(--foreground);
-          background: var(--list-hoverBackground);
+          background: var(--list-inactiveSelectionBackground);
           border-color: var(--kt-select-border);
         }
 
         &:hover {
           > td {
             color: var(--foreground);
-            background: var(--list-hoverBackground);
+            background: var(--list-inactiveSelectionBackground);
           }
         }
       }
@@ -86,11 +86,11 @@
   }
 
   &-thead th.@{table-prefix-cls}-column-sort {
-    background: var(--list-hoverBackground);
+    background: var(--list-inactiveSelectionBackground);
   }
 
   td&-column-sort {
-    background: var(--list-hoverBackground);
+    background: var(--list-inactiveSelectionBackground);
   }
 
   &-column-sorter {
