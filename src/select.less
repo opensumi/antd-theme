@@ -47,3 +47,10 @@
 @select-item-active-bg: var(--kt-selectDropdown-hoverBackground);
 // Dropdown 中的 Item 被选中时候的背景颜色
 @select-item-selected-bg: var(--kt-selectDropdown-selectionBackground);
+
+.@{ant-prefix}-select-item-option-disabled {
+  // https://github.com/ant-design/ant-design/blob/master/components/select/style/index.less#L243
+  color: var(--kt-select-disableForeground);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
