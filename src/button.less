@@ -54,3 +54,13 @@
   // 下方 svg 的 fill: currentColor 导致色调不协调，因此默认让 icon 读取 button 的 color
   color: inherit;
 }
+
+.@{ant-prefix}-btn-dashed,
+.@{ant-prefix}-btn-ghost {
+  &:hover,
+  &:focus {
+    color: var(--kt-defaultButton-hoverForeground);
+    background: var(--kt-defaultButton-hoverBackground);
+    border-color: var(--kt-defaultButton-border);
+  }
+}
