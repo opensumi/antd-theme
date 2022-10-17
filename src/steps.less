@@ -1,0 +1,42 @@
+// AntD 主题定制文档
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less#L418
+
+// OpenSumi Token 文档
+// https://github.com/opensumi/core/wiki/Input-%E8%BE%93%E5%85%A5%E6%A1%86
+
+.@{ant-prefix}-steps {
+  &-item {
+    &--title {
+      color: var(--foreground);
+    }
+    &-description {
+      color: var(--descriptionForeground);
+    }
+    &-icon,
+    &-wait {
+      border-color: var(--descriptionForeground);
+      opacity: 0.6;
+      .@{ant-prefix}-steps-icon {
+        color: var(--descriptionForeground);
+      }
+    }
+    &-wait {
+      .@{ant-prefix}-steps-item-wait {
+        .@{ant-prefix}-steps-item-container {
+          .@{ant-prefix}-steps-item-content {
+            .@{ant-prefix}-steps-item {
+              &-title {
+                color: var(--descriptionForeground);
+                opacity: 0.6;
+              }
+              &-description {
+                color: var(--descriptionForeground);
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
