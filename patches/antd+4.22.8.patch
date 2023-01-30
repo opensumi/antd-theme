@@ -1,0 +1,26 @@
+diff --git a/node_modules/antd/lib/table/style/index-pure.less b/node_modules/antd/lib/table/style/index-pure.less
+index 5ee1217..084ce2e 100644
+--- a/node_modules/antd/lib/table/style/index-pure.less
++++ b/node_modules/antd/lib/table/style/index-pure.less
+@@ -718,7 +718,7 @@
+       z-index: @table-sticky-zindex;
+       display: flex;
+       align-items: center;
+-      background: lighten(@table-border-color, 80%);
++      background: @table-border-color;
+       border-top: 1px solid @table-border-color;
+       opacity: 0.6;
+ 
+diff --git a/node_modules/antd/lib/tooltip/style/index-pure.less b/node_modules/antd/lib/tooltip/style/index-pure.less
+index d2ad5e1..5586eb3 100644
+--- a/node_modules/antd/lib/tooltip/style/index-pure.less
++++ b/node_modules/antd/lib/tooltip/style/index-pure.less
+@@ -84,7 +84,7 @@
+       // Use linear gradient to mix box shadow of tooltip inner
+       --antd-arrow-background-color: linear-gradient(
+         to right bottom,
+-        fadeout(@tooltip-bg, 10%),
++        @tooltip-bg,
+         @tooltip-bg
+       );
+ 
