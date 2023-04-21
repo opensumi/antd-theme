@@ -1,15 +1,12 @@
-# @opensumi/antd-theme
+# OpenSumi Ant Design Theme
 
 [![NPM version](https://img.shields.io/npm/v/@opensumi/antd-theme.svg?style=flat)](https://npmjs.org/package/@opensumi/antd-theme)
 [![NPM downloads](http://img.shields.io/npm/dm/@opensumi/antd-theme.svg?style=flat)](https://npmjs.org/package/@opensumi/antd-theme)
 
-A react library developed with dumi
+
+![Theme](./images/antd-theme.png)
 
 ## Usage
-
-TODO
-
-## Options
 
 TODO
 
