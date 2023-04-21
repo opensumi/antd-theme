@@ -38,16 +38,21 @@ async function copyComponentsDir(srcPath, targetPath) {
         copyComponentsDir(srcFilePath, targetFilePath);
       }
     } else {
-      if (path.extname(file) === '.md') {
+      if (file.includes('index.en-US.md') || file.includes('index.zh-CN.md')) {
         fse.copySync(srcFilePath, targetFilePath);
 
         // 如果是 markdown 文件，那么删除 markdown 文件中从 ## API 开始往下的全部内容
         const markdownFile = fse.readFileSync(targetFilePath, 'utf-8');
-        const regex = /^---[\s\S]*?---\n\n## Examples([\s\S]*?)\n\n#/;
-        const match = markdownFile.match(regex);
-        const [, header, examples] = match;
+        const regex = /^---([\s\S]*?)---|(##\s*Examples\s*|##\s*代码演示\s*)\n([\s\S]*?)(?=\n#)/gm;
 
-        fse.writeFileSync(targetFilePath, `${header} ${examples}`, 'utf-8');
+        try {
+          const match = markdownFile.match(regex);
+          const [header, examples] = match;
+
+          fse.writeFileSync(targetFilePath, `${header}\n\n${examples}`, 'utf-8');
+        } catch(err) {
+          console.error(`解析 markdown 失败，失败文件：${srcFilePath}`);
+        }
       }
     }
   });
@@ -82,7 +87,12 @@ async function copyComponentsDir(srcPath, targetPath) {
 
   // 将 components 目录拷贝至当前目录下
   const srcDir = path.join(targetDir, 'components');
-  const destDir = path.join(__dirname, '../components');
+  const destDir = path.join(__dirname, '../src');
+
+  console.log('start empty src dir');
+
+  // 清空 src 文件夹
+  await fse.emptyDir(destDir);
 
   // 读取源文件夹下的所有文件和子文件夹
   copyComponentsDir(srcDir, destDir);
