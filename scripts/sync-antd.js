@@ -67,13 +67,13 @@ async function copyComponentsDir(srcPath, targetPath) {
   const targetDir = path.join(tempDir, 'opensumi-ant-design');
 
   // 判断文件是否存在，如果存在那么删除
-  // if (fse.existsSync(targetDir)) {
-  //   fse.removeSync(targetDir);
-  // }
+  if (fse.existsSync(targetDir)) {
+    fse.removeSync(targetDir);
+  }
 
   console.log('start clone ant-design to temp dir');
 
-  // await runCommandInDir(`git clone ${repoUrl} ${targetDir} --depth=1`);
+  await runCommandInDir(`git clone ${repoUrl} ${targetDir} --depth=1`);
 
   console.log(`Antd code is downloaded to ${targetDir}`);
 
