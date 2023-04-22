@@ -4,7 +4,10 @@ const path = require('path');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
-const ignoreDir = ['app', 'anchor'];
+// 需要忽略掉的 antd components 组件列表
+const ignoreDir = [
+  'app', 'anchor', 'overview'
+];
 
 async function runCommandInDir(command, directory) {
   try {
@@ -41,7 +44,7 @@ async function copyComponentsDir(srcPath, targetPath) {
       if (file.includes('index.en-US.md') || file.includes('index.zh-CN.md')) {
         fse.copySync(srcFilePath, targetFilePath);
 
-        // 如果是 markdown 文件，那么删除 markdown 文件中从 ## API 开始往下的全部内容
+        // 如果是 markdown 文件，那么只获取头部跟演示代码部分
         const markdownFile = fse.readFileSync(targetFilePath, 'utf-8');
         const regex = /^---([\s\S]*?)---|(##\s*Examples\s*|##\s*代码演示\s*)\n([\s\S]*?)(?=\n#)/gm;
 
