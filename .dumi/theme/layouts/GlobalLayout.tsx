@@ -13,6 +13,8 @@ import { dark } from './color-theme/dark';
 import { light } from './color-theme/light';
 import { openSumiAntdTheme } from '../../../lib';
 
+import './index.less';
+
 const styleCache = createCache();
 if (typeof global !== 'undefined') {
   (global as any).styleCache = styleCache;
@@ -34,8 +36,6 @@ const GlobalLayout: React.FC = () => {
 
   const styleText = `:root { ${color === 'dark' ? dark : light} }`
 
-  console.log(color, 'color');
-
   return (
     <StyleProvider
       cache={styleCache}
@@ -46,18 +46,15 @@ const GlobalLayout: React.FC = () => {
       ]}
     >
       <ConfigProvider
+        prefixCls="sumi"
         theme={{
+          hashed: false,
           algorithm: getAlgorithm(color),
           ...openSumiAntdTheme,
         }}
       >
         <App>
           <style>{styleText}</style>
-          <div style={{
-            width: '100px',
-            height: '100px',
-            backgroundColor: 'var(--errorForeground)',
-          }}></div>
           {outlet}
         </App>
       </ConfigProvider>
