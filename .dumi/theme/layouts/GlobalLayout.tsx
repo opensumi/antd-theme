@@ -11,6 +11,7 @@ import React from 'react';
 
 import { dark } from './color-theme/dark';
 import { light } from './color-theme/light';
+// @ts-ignore
 import { openSumiAntdTheme } from '../../../lib';
 
 import './index.less';

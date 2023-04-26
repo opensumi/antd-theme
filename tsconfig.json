@@ -12,5 +12,5 @@
       "@opensumi/antd-theme/*": ["src/*", "*"]
     }
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "theme"]
 }
