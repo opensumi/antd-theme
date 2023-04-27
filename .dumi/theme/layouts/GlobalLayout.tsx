@@ -47,9 +47,7 @@ const GlobalLayout: React.FC = () => {
       ]}
     >
       <ConfigProvider
-        prefixCls="sumi"
         theme={{
-          hashed: false,
           algorithm: getAlgorithm(color),
           ...openSumiAntdTheme,
         }}
