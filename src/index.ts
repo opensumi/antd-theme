@@ -14,5 +14,10 @@ export const openSumiAntdTheme: ThemeConfig = {
       colorTextDisabled: 'var(--kt-input-disableForeground)',
       colorBgContainerDisabled: 'var(--kt-input-disableBackground)',
     },
+    Notification: {
+      colorBgElevated: 'var(--notifications-background)',
+      colorTextHeading: 'var(--notifications-foreground)',
+      colorText: 'var(--notifications-foreground)'
+    }
   },
 };
