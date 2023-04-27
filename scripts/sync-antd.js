@@ -90,7 +90,7 @@ async function copyComponentsDir(srcPath, targetPath) {
 
   // 将 components 目录拷贝至当前目录下
   const srcDir = path.join(targetDir, 'components');
-  const destDir = path.join(__dirname, '../src');
+  const destDir = path.join(__dirname, '../components');
 
   console.log('start empty src dir');
 

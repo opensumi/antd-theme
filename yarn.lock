@@ -2104,7 +2104,7 @@
   dependencies:
     "@umijs/bundler-utils" "4.0.66"
 
-"@umijs/babel-preset-umi@4.0.66", "@umijs/babel-preset-umi@^4.0.59":
+"@umijs/babel-preset-umi@4.0.66", "@umijs/babel-preset-umi@^4.0.66":
   version "4.0.66"
   resolved "https://registry.npm.alibaba-inc.com/@umijs/babel-preset-umi/download/@umijs/babel-preset-umi-4.0.66.tgz"
   integrity sha512-Q/vdxpGQnoYRKSqzt2vL4jhNXlGJsk4jRyPc42PHGabxjtwR2sJf3eq1F1IC515e5fTbGk/lUtqEpjX7NJmaMQ==
@@ -2128,7 +2128,7 @@
     postcss-flexbugs-fixes "5.0.2"
     postcss-preset-env "7.5.0"
 
-"@umijs/bundler-utils@4.0.66", "@umijs/bundler-utils@^4.0.59", "@umijs/bundler-utils@^4.0.64":
+"@umijs/bundler-utils@4.0.66", "@umijs/bundler-utils@^4.0.64", "@umijs/bundler-utils@^4.0.66":
   version "4.0.66"
   resolved "https://registry.npm.alibaba-inc.com/@umijs/bundler-utils/download/@umijs/bundler-utils-4.0.66.tgz"
   integrity sha512-9O2I9KIxjgQNZkIunqqWjnbLLYmNeVYmNcDgyPRfdi1C9hSCC9Lo5i7Us7KiKxK0nWe4V3E9by8aJI3u3LGCPw==
@@ -2153,7 +2153,7 @@
     rollup-plugin-visualizer "5.9.0"
     vite "4.2.0"
 
-"@umijs/bundler-webpack@4.0.66", "@umijs/bundler-webpack@^4.0.59":
+"@umijs/bundler-webpack@4.0.66", "@umijs/bundler-webpack@^4.0.66":
   version "4.0.66"
   resolved "https://registry.npm.alibaba-inc.com/@umijs/bundler-webpack/download/@umijs/bundler-webpack-4.0.66.tgz"
   integrity sha512-IwCn8V4Hwl1NfHfWo4rA5oVIyKxo/cqS5kcRF43c/Fve/cI4ryYNBBhoiXF7u25RtJ37RtYLzqSbCQ3alNznwQ==
@@ -2185,7 +2185,7 @@
   resolved "https://registry.npm.alibaba-inc.com/@umijs/case-sensitive-paths-webpack-plugin/download/@umijs/case-sensitive-paths-webpack-plugin-1.0.1.tgz"
   integrity sha512-kDKJ8yTarxwxGJDInG33hOpaQRZ//XpNuuznQ/1Mscypw6kappzFmrBr2dOYave++K7JHouoANF354UpbEQw0Q==
 
-"@umijs/core@4.0.66", "@umijs/core@^4.0.59", "@umijs/core@^4.0.64":
+"@umijs/core@4.0.66", "@umijs/core@^4.0.64", "@umijs/core@^4.0.66":
   version "4.0.66"
   resolved "https://registry.npm.alibaba-inc.com/@umijs/core/download/@umijs/core-4.0.66.tgz"
   integrity sha512-X2fLdIfed/Jygld1YCBKfuIzAiZWjTfJv8puRWGWkXC0rcII+Ei8NLWCUVQ9lreyDFzY+GcXWnYscFfYoUqmzA==
@@ -2381,7 +2381,7 @@
   resolved "https://registry.npm.alibaba-inc.com/@umijs/ui/download/@umijs/ui-3.0.0-alpha.0.tgz"
   integrity sha512-lWbhxnROT+/hQbkF1/7cFYVugiZZRn9PfEndDfY7ARNe6NKkU9Ebwk53y5gL4+xPaV1fEy7gurJ7VeLlotpjxQ==
 
-"@umijs/utils@4.0.66", "@umijs/utils@^4.0.59":
+"@umijs/utils@4.0.66", "@umijs/utils@^4.0.66":
   version "4.0.66"
   resolved "https://registry.npm.alibaba-inc.com/@umijs/utils/download/@umijs/utils-4.0.66.tgz"
   integrity sha512-ASAFBCN5SJJuyNkVRtFaNAZff5Mq6suywwlVThdDLcP9BPmAMp8LIsu3NkrpcCaVECMqWSu7x1FqgNPNS3Sqbw==
@@ -4809,22 +4809,24 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-father@^4.1.0:
-  version "4.1.7"
-  resolved "https://registry.npm.alibaba-inc.com/father/download/father-4.1.7.tgz"
-  integrity sha512-88DXA4ETIgMx+Lr1JzhwvYUZHPWhYBO1PwgmPSICaPffT9su44eCdwO4b5TMtvPeR5+E3njtPFnJjPrwaCxcwQ==
+father@^4.1.9:
+  version "4.1.9"
+  resolved "https://registry.npm.alibaba-inc.com/father/download/father-4.1.9.tgz#770c5994052364d7d70c1ade1cf32eb6ba8ae70c"
+  integrity sha512-oY4Vlj4Qn0Ed9pM9SckSfQdn7yNVw50K6V5Ke2JRGoAvmTkQEh4qlAtkWngLNzwvCSgytyZTmI3Dqgpq6eboHg==
   dependencies:
     "@microsoft/api-extractor" "7.34.3"
-    "@umijs/babel-preset-umi" "^4.0.59"
-    "@umijs/bundler-utils" "^4.0.59"
-    "@umijs/bundler-webpack" "^4.0.59"
-    "@umijs/core" "^4.0.59"
-    "@umijs/utils" "^4.0.59"
+    "@umijs/babel-preset-umi" "^4.0.66"
+    "@umijs/bundler-utils" "^4.0.66"
+    "@umijs/bundler-webpack" "^4.0.66"
+    "@umijs/case-sensitive-paths-webpack-plugin" "^1.0.1"
+    "@umijs/core" "^4.0.66"
+    "@umijs/utils" "^4.0.66"
     "@vercel/ncc" "0.33.3"
     babel-plugin-dynamic-import-node "2.3.3"
     babel-plugin-module-resolver "4.1.0"
     babel-plugin-react-require "3.1.3"
     babel-plugin-transform-define "2.0.1"
+    enhanced-resolve "5.9.3"
     fast-glob "3.2.12"
     file-system-cache "2.0.0"
     loader-runner "4.2.0"

@@ -3,10 +3,9 @@
   "version": "0.0.1",
   "description": "A react library developed with dumi",
   "license": "MIT",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
     "build": "father build",
@@ -61,7 +60,7 @@
     "chalk": "^5.2.0",
     "dumi": "^2.0.2",
     "eslint": "^8.23.0",
-    "father": "^4.1.0",
+    "father": "^4.1.9",
     "fetch-jsonp": "^1.2.3",
     "fs-extra": "^11.1.1",
     "husky": "^8.0.1",
