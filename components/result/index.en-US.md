@@ -1,23 +1,19 @@
 ---
-type: Feedback
+group: Feedback
 category: Components
 title: Result
-cols: 1
-cover: https://gw.alipayobjects.com/zos/alicdn/EuEXmy7nO/Result.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*-e2IRroDJyEAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*-0kxQrbHx2kAAAAAAAAAAAAADrJ8AQ/original
 ---
 
-Used to feed back the results of a series of operational tasks.
+## Examples
 
-## When To Use
-
-Use when important operations need to inform the user to process the results and the feedback is more complicated.
-
-## API
-
-| Property | Description | Type | Default |
-| --- | --- | --- | --- |
-| title | title string | ReactNode | - |
-| subTitle | subTitle string | ReactNode | - |
-| status | result status,decide icons and colors | `success` \| `error` \| `info` \| `warning` \| `404` \| `403` \| `500` | `info` |
-| icon | custom back icon | ReactNode | - |
-| extra | operating area | ReactNode | - |
+<!-- prettier-ignore -->
+<code src="./demo/success.tsx">Success</code>
+<code src="./demo/info.tsx">Info</code>
+<code src="./demo/warning.tsx">Warning</code>
+<code src="./demo/403.tsx">403</code>
+<code src="./demo/404.tsx">404</code>
+<code src="./demo/500.tsx">500</code>
+<code src="./demo/error.tsx">Error</code>
+<code src="./demo/customIcon.tsx">Custom icon</code>

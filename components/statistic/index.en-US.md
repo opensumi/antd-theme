@@ -1,41 +1,18 @@
 ---
 category: Components
-type: Data Display
+group: Data Display
 title: Statistic
-cover: https://gw.alipayobjects.com/zos/antfincdn/rcBNhLBrKbE/Statistic.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*YL7PRYNtH-4AAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*BPWDRbSYxJ4AAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
 ---
 
-Display statistic number.
+## Examples
 
-## When To Use
-
-- When want to highlight some data.
-- When want to display statistic data with description.
-
-## API
-
-#### Statistic
-
-| Property         | Description                   | Type                 | Default | Version |
-| ---------------- | ----------------------------- | -------------------- | ------- | ------- |
-| decimalSeparator | decimal separator             | string               | .       |         |
-| formatter        | customize value display logic | (value) => ReactNode | -       |         |
-| groupSeparator   | group separator               | string               | ,       |         |
-| precision        | precision of input value      | number               | -       |         |
-| prefix           | prefix node of value          | string \| ReactNode  | -       |         |
-| suffix           | suffix node of value          | string \| ReactNode  | -       |         |
-| title            | Display title                 | string \| ReactNode  | -       |         |
-| value            | Display value                 | string \| number     | -       |         |
-| valueStyle       | Set value css style           | CSSProperties        | -       |         |
-
-#### Statistic.Countdown
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| format | Format as [moment](http://momentjs.com/) | string | 'HH:mm:ss' |  |
-| onFinish | Trigger when time's up | () => void | - |  |
-| prefix | prefix node of value | string \| ReactNode | - |  |
-| suffix | suffix node of value | string \| ReactNode | - |  |
-| title | Display title | string \| ReactNode | - |  |
-| value | Set target countdown time | number \| moment | - |  |
-| valueStyle | Set value css style | CSSProperties | - |  |
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">Basic</code>
+<code src="./demo/unit.tsx">Unit</code>
+<code src="./demo/animated.tsx">Animated number</code>
+<code src="./demo/card.tsx" background="grey">In Card</code>
+<code src="./demo/countdown.tsx">Countdown</code>

@@ -1,34 +1,24 @@
 ---
 category: Components
-type: Data Display
+group: Data Display
 title: Tag
-cover: https://gw.alipayobjects.com/zos/antfincdn/RkyisJo2r%267/Tag.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*_SBsSrKLg00AAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*JPNAQYrVkYkAAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
 ---
 
-Tag for categorizing or markup.
+## Examples
 
-## When To Use
-
-- It can be used to tag by dimension or property.
-
-- When categorizing.
-
-## API
-
-### Tag
-
-| Property | Description | Type | Default |
-| --- | --- | --- | --- |
-| afterClose | Callback executed when close animation is completed, please use `onClose`, we will remove this in the next version | () => void | - |
-| closable | Whether the Tag can be closed | boolean | `false` |
-| color | Color of the Tag | string | - |
-| onClose | Callback executed when tag is closed | (e) => void | - |
-| visible | Whether the Tag is closed or not | boolean | `true` |
-| icon | Set the icon of tag | ReactNode | - |  |
-
-### Tag.CheckableTag
-
-| Property | Description                                     | Type              | Default |
-| -------- | ----------------------------------------------- | ----------------- | ------- |
-| checked  | Checked status of Tag                           | boolean           | `false` |
-| onChange | Callback executed when Tag is checked/unchecked | (checked) => void | -       |
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">Basic</code>
+<code src="./demo/colorful.tsx">Colorful Tag</code>
+<code src="./demo/colorful-inverse.tsx" debug>Inverse Colorful Tag</code>
+<code src="./demo/control.tsx">Add & Remove Dynamically</code>
+<code src="./demo/checkable.tsx">Checkable</code>
+<code src="./demo/animation.tsx">Animate</code>
+<code src="./demo/icon.tsx">Icon</code>
+<code src="./demo/status.tsx">Status Tag</code>
+<code src="./demo/borderless.tsx">borderless</code>
+<code src="./demo/borderlessLayout.tsx" debug>borderless in layout</code>
+<code src="./demo/customize.tsx" debug>Customize close</code>

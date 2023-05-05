@@ -1,36 +1,28 @@
 ---
 category: Components
-type: Data Display
 title: Badge
-cover: https://gw.alipayobjects.com/zos/antfincdn/6%26GF9WHwvY/Badge.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*e0qITYqF394AAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*v8EQT7KoGbcAAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
+group: Data Display
 ---
 
-Small numerical value or status descriptor for UI elements.
+## Examples
 
-## When To Use
-
-Badge normally appears in proximity to notifications or user avatars with eye-catching appeal, typically displaying unread messages count.
-
-## API
-
-```jsx
-<Badge count={5}>
-  <a href="#" className="head-example" />
-</Badge>
-```
-
-```jsx
-<Badge count={5} />
-```
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| color | Customize Badge dot color | string | - |  |
-| count | Number to show in badge | ReactNode |  |  |
-| dot | Whether to display a red dot instead of `count` | boolean | `false` |  |
-| offset | set offset of the badge dot, like`[x, y]` | `[number, number]` | - |  |
-| overflowCount | Max count to show | number | 99 |  |
-| showZero | Whether to show badge when `count` is zero | boolean | `false` |  |
-| status | Set Badge as a status dot | `success` \| `processing` \| `default` \| `error` \| `warning` | `''` |  |
-| text | If `status` is set, `text` sets the display text of the status `dot` | string | `''` |  |
-| title | Text to show when hovering over the badge | string | `count` |  |
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">Basic</code>
+<code src="./demo/no-wrapper.tsx">Standalone</code>
+<code src="./demo/overflow.tsx">Overflow Count</code>
+<code src="./demo/dot.tsx">Red badge</code>
+<code src="./demo/change.tsx">Dynamic</code>
+<code src="./demo/link.tsx">Clickable</code>
+<code src="./demo/offset.tsx">Offset</code>
+<code src="./demo/size.tsx">Size</code>
+<code src="./demo/status.tsx">Status</code>
+<code src="./demo/colorful.tsx">Colorful Badge</code>
+<code src="./demo/ribbon.tsx">Ribbon</code>
+<code src="./demo/ribbon-debug.tsx" debug>Ribbon Debug</code>
+<code src="./demo/mix.tsx" debug>Mixed usage</code>
+<code src="./demo/title.tsx" debug>Title</code>
+<code src="./demo/colorful-with-count-debug.tsx" debug>Colorful Badge support count Debug</code>

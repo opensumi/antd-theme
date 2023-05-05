@@ -1,21 +1,23 @@
 ---
 category: Components
-type: Data Display
 title: Avatar
-cover: https://gw.alipayobjects.com/zos/antfincdn/aBcnbw68hP/Avatar.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*JJBSS5lBG4IAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*YbgyQaRGz-UAAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
+group:
+  title: Data Display
+  order: 5
 ---
 
-Avatars can be used to represent people or objects. It supports images, `Icon`s, or letters.
+## Examples
 
-## API
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| icon | custom icon type for an icon avatar | ReactNode | - |  |
-| shape | the shape of avatar | `circle` \| `square` | `circle` |  |
-| size | the size of the avatar | number \| `large` \| `small` \| `default` | `default` |  |
-| src | the address of the image for an image avatar | string | - |  |
-| srcSet | a list of sources to use for different screen resolutions | string | - |  |
-| alt | This attribute defines the alternative text describing the image | string | - |  |
-| onError | handler when img load error, return false to prevent default fallback behavior | () => boolean | - |  |
-| gap | Letter type unit distance between left and right sides | number | 4 | 4.3.0 |
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">Basic</code>
+<code src="./demo/type.tsx">Type</code>
+<code src="./demo/dynamic.tsx">Autoset Font Size</code>
+<code src="./demo/badge.tsx">With Badge</code>
+<code src="./demo/group.tsx">Avatar.Group</code>
+<code src="./demo/toggle-debug.tsx" debug>Calculate text style when hiding</code>
+<code src="./demo/responsive.tsx">Responsive Size</code>
+<code src="./demo/fallback.tsx" debug>Fallback</code>

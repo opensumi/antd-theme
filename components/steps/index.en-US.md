@@ -1,53 +1,29 @@
 ---
 category: Components
-type: Navigation
-cols: 1
+group: Navigation
 title: Steps
-cover: https://gw.alipayobjects.com/zos/antfincdn/UZYqMizXHaj/Steps.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*677sTqCpE3wAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*cFsBQLA0b7UAAAAAAAAAAAAADrJ8AQ/original
 ---
 
-`Steps` is a navigation bar that guides users through the steps of a task.
+## Examples
 
-## When To Use
-
-When a given task is complicated or has a certain sequence in the series of subtasks, we can decompose it into several steps to make things easier.
-
-## API
-
-```jsx
-<Steps>
-  <Step title="first step" />
-  <Step title="second step" />
-  <Step title="third step" />
-</Steps>
-```
-
-### Steps
-
-The whole of the step bar.
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| className | Additional class to Steps | string | - |  |
-| type | Type of steps, can be set to one of the following values: `default`, `navigation` | string | `default` |  |
-| current | To set the current step, counting from 0. You can overwrite this state by using `status` of `Step` | number | 0 |  |
-| direction | To specify the direction of the step bar, `horizontal` or `vertical` | string | `horizontal` |  |
-| labelPlacement | Place title and description with `horizontal` or `vertical` direction | string | `horizontal` |  |
-| progressDot | Steps with progress dot style, customize the progress dot by setting it to a function. labelPlacement will be `vertical` | Boolean or (iconDot, {index, status, title, description}) => ReactNode | false |  |
-| size | To specify the size of the step bar, `default` and `small` are currently supported | string | `default` |  |
-| status | To specify the status of current step, can be set to one of the following values: `wait` `process` `finish` `error` | string | `process` |  |
-| initial | Set the initial step, counting from 0 | number | 0 |  |
-| onChange | Trigger when Step is changed | (current) => void | - |  |
-
-### Steps.Step
-
-A single step in the step bar.
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| description | Description of the step, optional property | string\|ReactNode | - |  |
-| icon | Icon of the step, optional property | string\|ReactNode | - |  |
-| status | To specify the status. It will be automatically set by `current` of `Steps` if not configured. Optional values are: `wait` `process` `finish` `error` | string | `wait` |  |
-| title | Title of the step | string\|ReactNode | - |  |
-| subTitle | Subtitle of the step | string\|ReactNode | - |  |
-| disabled | Disable click | boolean | false |  |
+<!-- prettier-ignore -->
+<code src="./demo/simple.tsx">Basic</code>
+<code src="./demo/small-size.tsx">Mini version</code>
+<code src="./demo/icon.tsx">With icon</code>
+<code src="./demo/step-next.tsx">Switch Step</code>
+<code src="./demo/vertical.tsx">Vertical</code>
+<code src="./demo/vertical-small.tsx">Vertical mini version</code>
+<code src="./demo/error.tsx">Error status</code>
+<code src="./demo/progress-dot.tsx">Dot Style</code>
+<code src="./demo/customized-progress-dot.tsx">Customized Dot Style</code>
+<code src="./demo/progress-dot-small.tsx" debug>Dot Style Size Small</code>
+<code src="./demo/clickable.tsx">Clickable</code>
+<code src="./demo/nav.tsx">Navigation Steps</code>
+<code src="./demo/progress.tsx">Steps with progress</code>
+<code src="./demo/label-placement.tsx">Label Placement</code>
+<code src="./demo/progress-debug.tsx" debug>Progress Debug</code>
+<code src="./demo/steps-in-steps.tsx" debug>Steps inside Steps</code>
+<code src="./demo/inline.tsx">Inline Steps</code>
+<code src="./demo/wireframe.tsx" debug>Wireframe</code>

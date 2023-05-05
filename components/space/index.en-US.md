@@ -1,21 +1,25 @@
 ---
 category: Components
-type: Layout
+group: Layout
 title: Space
-cols: 1
-cover: https://gw.alipayobjects.com/zos/antfincdn/wc6%263gJ0Y8/Space.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*ZiJ3SbOH9SUAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*37T2R6O9oi0AAAAAAAAAAAAADrJ8AQ/original
 ---
 
-Set components spacing.
+## Examples
 
-## When To Use
-
-Avoid components clinging together and set a unified space.
-
-## API
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| align | align items | `start` \| `end` \|`center` \|`baseline` | - | 4.2.0 |
-| direction | space direction | `vertical` \| `horizontal` | `horizontal` | 4.1.0 |
-| size | space size | `small` \| `middle` \| `large` \| `number` | `small` | 4.1.0 |
+<!-- prettier-ignore -->
+<code src="./demo/base.tsx">Basic Usage</code>
+<code src="./demo/vertical.tsx">Vertical Space</code>
+<code src="./demo/size.tsx">Space Size</code>
+<code src="./demo/align.tsx">Align</code>
+<code src="./demo/customize.tsx">Customize Size</code>
+<code src="./demo/wrap.tsx">Wrap</code>
+<code src="./demo/split.tsx">Split</code>
+<code src="./demo/compact.tsx">Compact Mode for form component</code>
+<code src="./demo/compact-buttons.tsx">Button Compact Mode</code>
+<code src="./demo/compact-button-vertical.tsx">Vertical Compact Mode</code>
+<code src="./demo/compact-debug.tsx" debug>Input addon debug</code>
+<code src="./demo/compact-nested.tsx" debug>Nested Space Compact</code>
+<code src="./demo/debug.tsx" debug>Diverse Child</code>
+<code src="./demo/gap-in-line.tsx" debug>Flex gap style</code>

@@ -1,21 +1,16 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react",
     "baseUrl": "./",
     "paths": {
-      "antd": ["components/index.tsx"],
-      "antd/es/*": ["components/*"]
-    },
-    "strictNullChecks": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "jsx": "preserve",
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "target": "es6",
-    "lib": ["dom", "es2017"],
-    "skipLibCheck": true
+      "@@/*": [".dumi/tmp/*"],
+      "@opensumi/antd-theme": ["src"],
+      "@opensumi/antd-theme/*": ["src/*", "*"]
+    }
   },
-  "exclude": ["node_modules", "lib", "es"]
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "theme"]
 }

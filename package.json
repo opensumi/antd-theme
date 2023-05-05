@@ -1,115 +1,94 @@
 {
   "name": "@opensumi/antd-theme",
-  "version": "1.0.3",
-  "description": "OpenSumi theme for antd4",
-  "keywords": [
-    "antd custom theme",
-    "OpenSumi theme"
-  ],
-  "homepage": "https://github.com/opensumi/antd-theme",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:opensumi/antd-theme.git"
-  },
+  "version": "0.0.1",
+  "description": "A react library developed with dumi",
   "license": "MIT",
+  "main": "lib",
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
-  "main": "lib/theme.js",
   "scripts": {
-    "compile": "rm -rf lib && gulp theme",
-    "prepublishOnly": "npm run compile",
-    "prettier": "prettier -c --write '**/*'",
-    "pretty-quick": "pretty-quick",
-    "site": "bisheng start -c ./site/bisheng.config.js",
-    "build": "gulp color-theme && npm run site",
-    "start": "cross-env NODE_ENV=development concurrently \"gulp color-theme\" \"npm run site\""
+    "build": "father build",
+    "build:watch": "father dev",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
+    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "start": "npm run dev",
+    "sync-antd": "node ./scripts/sync-antd.js"
   },
-  "browserslist": [
-    "last 2 versions",
-    "Firefox ESR",
-    "> 1%",
-    "ie >= 11"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{css,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "lodash": "^4.17.13",
-    "moment": "^2.27.0",
-    "raf": "^3.4.1",
-    "scroll-into-view-if-needed": "^2.2.25"
+    "antd": "^5.4.3"
   },
   "devDependencies": {
-    "@ant-design/bisheng-plugin": "^2.3.0",
-    "@ant-design/colors": "^4.0.1",
-    "@ant-design/hitu": "^0.0.0-alpha.13",
-    "@ant-design/icons": "^4.2.1",
-    "@ant-design/tools": "^9.0.0",
-    "@qixian.cs/github-contributors-list": "^1.0.3",
-    "@stackblitz/sdk": "^1.3.0",
-    "@types/classnames": "^2.2.8",
-    "@types/lodash": "^4.14.157",
-    "@types/raf": "^3.4.0",
-    "@types/react": "^16.9.41",
-    "@types/react-color": "^3.0.4",
-    "@types/react-dom": "^16.9.5",
-    "antd": "4.4.0",
-    "antd-img-crop": "^3.9.0",
-    "babel-plugin-add-react-displayname": "^0.0.5",
-    "bisheng": "^1.6.1",
-    "bisheng-plugin-description": "^0.1.4",
-    "bisheng-plugin-react": "^1.1.0",
-    "bisheng-plugin-toc": "^0.4.4",
-    "concurrently": "^5.0.2",
-    "cross-env": "^7.0.0",
-    "docsearch.js": "^2.6.3",
-    "esbuild-webpack-plugin": "^1.0.0",
-    "fetch-jsonp": "^1.1.3",
-    "gulp": "^4.0.2",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-less": "^4.0.1",
-    "gulp-less-variables-to-file": "^0.1.1",
-    "gulp-prettier": "^3.0.0",
-    "gulp-rename": "^2.0.0",
-    "husky": "^4.0.3",
-    "immutability-helper": "^3.0.0",
-    "intersection-observer": "^0.10.0",
-    "jsonml.js": "^0.1.0",
-    "less-plugin-autoprefix": "^2.0.0",
-    "less-plugin-npm-import": "^2.1.0",
-    "lz-string": "^1.4.4",
-    "plugin-error": "^1.0.1",
-    "prettier": "^2.0.1",
-    "pretty-quick": "^2.0.0",
-    "querystring": "^0.2.0",
-    "rc-footer": "^0.6.3",
-    "rc-tween-one": "^2.4.1",
-    "react": "^16.9.0",
-    "react-color": "^2.17.3",
-    "react-copy-to-clipboard": "^5.0.1",
-    "react-dnd": "^11.1.1",
-    "react-dnd-html5-backend": "^11.1.1",
-    "react-dom": "^16.9.0",
-    "react-github-button": "^0.1.11",
-    "react-helmet-async": "^1.0.4",
-    "react-highlight-words": "^0.16.0",
-    "react-infinite-scroller": "^1.2.4",
-    "react-intl": "^4.7.6",
-    "react-resizable": "^1.8.0",
-    "react-router-dom": "^5.0.1",
-    "react-sticky": "^6.0.3",
-    "react-text-loop": "^2.3.0",
-    "react-virtualized": "~9.21.1",
-    "react-window": "^1.8.5",
-    "reqwest": "^2.0.5",
-    "scrollama": "^2.0.0",
-    "theme-switcher": "^1.0.2",
-    "through2": "^4.0.2",
-    "typescript": "^3.9.6"
-  }
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@dnd-kit/core": "^6.0.8",
+    "@dnd-kit/sortable": "^7.0.2",
+    "@dnd-kit/utilities": "^3.2.1",
+    "@emotion/css": "^11.10.6",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@umijs/lint": "^4.0.0",
+    "antd-img-crop": "^4.12.2",
+    "chalk": "^5.2.0",
+    "dumi": "^2.0.2",
+    "eslint": "^8.23.0",
+    "father": "^4.1.9",
+    "fetch-jsonp": "^1.2.3",
+    "fs-extra": "^11.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "qs": "^6.11.1",
+    "rc-tween-one": "^3.0.6",
+    "react": "^18.0.0",
+    "react-color": "^2.19.3",
+    "react-countup": "^6.4.2",
+    "react-dom": "^18.0.0",
+    "react-draggable": "^4.4.5",
+    "react-fast-marquee": "^1.3.5",
+    "react-highlight-words": "^0.20.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-resizable": "^3.0.5",
+    "react-sticky-box": "^2.0.4",
+    "react-window": "^1.8.9",
+    "stylelint": "^14.9.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": []
 }

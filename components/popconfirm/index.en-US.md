@@ -1,35 +1,22 @@
 ---
 category: Components
-type: Feedback
+group: Feedback
 title: Popconfirm
-cover: https://gw.alipayobjects.com/zos/alicdn/8ln6VUFkX/Popconfirm.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*sAGpRoBtTXcAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*HrFtQ6jJJFQAAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
 ---
 
-A simple and compact confirmation dialog of an action.
+## Examples
 
-## When To Use
-
-A simple and compact dialog used for asking for user confirmation.
-
-The difference with the `confirm` modal dialog is that it's more lightweight than the static popped full-screen confirm modal.
-
-## API
-
-| Param | Description | Type | Default value |
-| --- | --- | --- | --- |
-| cancelText | text of the Cancel button | string | `Cancel` |
-| okText | text of the Confirm button | string | `OK` |
-| okType | Button `type` of the Confirm button | string | `primary` |
-| okButtonProps | The ok button props | [ButtonProps](/components/button/#API) | - |
-| cancelButtonProps | The cancel button props | [ButtonProps](/components/button/#API) | - |
-| title | title of the confirmation box | string\|ReactNode\|() => ReactNode | - |
-| onCancel | callback of cancel | function(e) | - |
-| onConfirm | callback of confirmation | function(e) | - |
-| icon | customize icon of confirmation | ReactNode | `<ExclamationCircle />` |
-| disabled | is show popconfirm when click its childrenNode | boolean | false |
-
-Consult [Tooltip's documentation](/components/tooltip/#API) to find more APIs.
-
-## Note
-
-Please ensure that the child node of `Popconfirm` accepts `onMouseEnter`, `onMouseLeave`, `onFocus`, `onClick` events.
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">Basic</code>
+<code src="./demo/locale.tsx">Locale text</code>
+<code src="./demo/placement.tsx">Placement</code>
+<code src="./demo/dynamic-trigger.tsx">Conditional trigger</code>
+<code src="./demo/icon.tsx">Customize icon</code>
+<code src="./demo/async.tsx">Asynchronously close</code>
+<code src="./demo/promise.tsx">Asynchronously close on Promise</code>
+<code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
+<code src="./demo/wireframe.tsx" debug>Wireframe</code>

@@ -1,41 +1,28 @@
 ---
 category: Components
 subtitle: 数字输入框
-type: 数据录入
+group: 数据录入
 title: InputNumber
-cover: https://gw.alipayobjects.com/zos/alicdn/SPEln9WgK/InputNumber.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*JvWbSYhuNlIAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*1uH-R5kLAMIAAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
 ---
 
-通过鼠标或键盘，输入范围内的数值。
+## 代码演示
 
-## 何时使用
-
-当需要获取标准数值时。
-
-## API
-
-属性如下
-
-| 成员 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| autoFocus | 自动获取焦点 | boolean | false |
-| defaultValue | 初始值 | number |  |
-| disabled | 禁用 | boolean | false |
-| formatter | 指定输入框展示值的格式 | function(value: number \| string): string |  |
-| max | 最大值 | number | Infinity |
-| min | 最小值 | number | -Infinity |
-| parser | 指定从 `formatter` 里转换回数字的方式，和 `formatter` 搭配使用 | function(string): number |  |
-| precision | 数值精度 | number |  |
-| decimalSeparator | 小数点 | string |  |
-| size | 输入框大小 | `large` \| `middle` \| `small` | 无 |
-| step | 每次改变步数，可以为小数 | number\|string | 1 |
-| value | 当前值 | number |  |
-| onChange | 变化回调 | Function(value: number \| string) |  |
-| onPressEnter | 按下回车的回调 | function(e) |  |
-
-## 方法
-
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
-| focus() | 获取焦点 |
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">基本</code>
+<code src="./demo/size.tsx">三种大小</code>
+<code src="./demo/addon.tsx">前置/后置标签</code>
+<code src="./demo/disabled.tsx">不可用</code>
+<code src="./demo/digit.tsx">高精度小数</code>
+<code src="./demo/formatter.tsx">格式化展示</code>
+<code src="./demo/keyboard.tsx">键盘行为</code>
+<code src="./demo/borderless.tsx">无边框</code>
+<code src="./demo/out-of-range.tsx">超出边界</code>
+<code src="./demo/prefix.tsx">前缀</code>
+<code src="./demo/status.tsx">自定义状态</code>
+<code src="./demo/controls.tsx" debug>图标按钮</code>
+<code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
+<code src="./demo/debug-token.tsx" debug>覆盖组件样式</code>

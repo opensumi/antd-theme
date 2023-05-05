@@ -1,79 +1,27 @@
 ---
 category: Components
-type: Data Entry
+group: Data Entry
 title: TimePicker
-cover: https://gw.alipayobjects.com/zos/alicdn/5YIZctT1O/TimePicker.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*kGmGSLk_1fwAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*1hDmQJIDFJQAAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
 ---
 
-To select/input a time.
+## Examples
 
-## When To Use
-
----
-
-By clicking the input box, you can select a time from a popup panel.
-
-## API
-
----
-
-```jsx
-import moment from 'moment';
-
-<TimePicker defaultValue={moment('13:30:56', 'HH:mm:ss')} />;
-```
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| allowClear | allow clearing text | boolean | true |  |
-| autoFocus | get focus when component mounted | boolean | false |  |
-| bordered | whether has border style | boolean | true |  |
-| className | className of picker | string | '' |  |
-| clearText | clear tooltip of icon | string | clear |  |
-| defaultValue | to set default time | [moment](http://momentjs.com/) | - |  |
-| disabled | determine whether the TimePicker is disabled | boolean | false |  |
-| disabledHours | to specify the hours that cannot be selected | function() | - |  |
-| disabledMinutes | to specify the minutes that cannot be selected | function(selectedHour) | - |  |
-| disabledSeconds | to specify the seconds that cannot be selected | function(selectedHour, selectedMinute) | - |  |
-| format | to set the time format | string | "HH:mm:ss" |  |
-| getPopupContainer | to set the container of the floating layer, while the default is to create a div element in body | function(trigger) | - |  |
-| hideDisabledOptions | hide the options that can not be selected | boolean | false |  |
-| hourStep | interval between hours in picker | number | 1 |  |
-| inputReadOnly | Set the `readonly` attribute of the input tag (avoids virtual keyboard on touch devices) | boolean | false |  |
-| minuteStep | interval between minutes in picker | number | 1 |  |
-| open | whether to popup panel | boolean | false |  |
-| placeholder | display when there's no value | string | "Select a time" |  |
-| popupClassName | className of panel | string | - |  |
-| popupStyle | style of panel | CSSProperties | - |  |
-| secondStep | interval between seconds in picker | number | 1 |  |
-| suffixIcon | The custom suffix icon | ReactNode | - |  |
-| clearIcon | The custom clear icon | ReactNode | - |  |
-| use12Hours | display as 12 hours format, with default format `h:mm:ss a` | boolean | false |  |
-| renderExtraFooter | called from time picker panel to render some addon to its bottom | () => ReactNode | - |  |
-| value | to set time | [moment](http://momentjs.com/) | - |  |
-| onChange | a callback function, can be executed when the selected time is changing | function(time: moment, timeString: string): void | - |  |
-| onOpenChange | a callback function which will be called while panel opening/closing | (open: boolean): void | - |  |
-
-## Methods
-
-| Name    | Description  | Version |
-| ------- | ------------ | ------- |
-| blur()  | remove focus |         |
-| focus() | get focus    |         |
-
-### RangePicker
-
-Same props from [RangePicker](/components/date-picker/#RangePicker) of DatePicker. And includes additional props:
-
-| Property | Description              | Type    | Default | Version |
-| -------- | ------------------------ | ------- | ------- | ------- |
-| order    | Order start and end time | boolean | true    | 4.1.0   |
-
-<style>
-.code-box-demo .ant-picker { margin: 0 8px 12px 0; }
-.ant-row-rtl .code-box-demo .ant-picker { margin: 0 0 12px 8px; }
-</style>
-
-## FAQ
-
-- [How to use TimePicker with customize date library like dayjs](/docs/react/replace-moment#TimePicker)
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">Basic</code>
+<code src="./demo/value.tsx">Under Control</code>
+<code src="./demo/size.tsx">Three Sizes</code>
+<code src="./demo/disabled.tsx">disabled</code>
+<code src="./demo/hide-column.tsx">Hour and minute</code>
+<code src="./demo/interval-options.tsx">interval option</code>
+<code src="./demo/addon.tsx">Addon</code>
+<code src="./demo/12hours.tsx">12 hours</code>
+<code src="./demo/colored-popup.tsx" debug>Colored Popup</code>
+<code src="./demo/range-picker.tsx">Time Range Picker</code>
+<code src="./demo/bordered.tsx">Bordered-less</code>
+<code src="./demo/status.tsx">Status</code>
+<code src="./demo/suffix.tsx" debug>Suffix</code>
+<code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>

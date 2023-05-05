@@ -1,42 +1,19 @@
 ---
 category: Components
 subtitle: 统计数值
-type: 数据展示
+group: 数据展示
 title: Statistic
-cover: https://gw.alipayobjects.com/zos/antfincdn/rcBNhLBrKbE/Statistic.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*YL7PRYNtH-4AAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*BPWDRbSYxJ4AAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
 ---
 
-展示统计数值。
+## 代码演示
 
-## 何时使用
-
-- 当需要突出某个或某组数字时。
-- 当需要展示带描述的统计类数据时使用。
-
-## API
-
-#### Statistic
-
-| 参数             | 说明             | 类型                 | 默认值 | 版本 |
-| ---------------- | ---------------- | -------------------- | ------ | ---- |
-| decimalSeparator | 设置小数点       | string               | .      |      |
-| formatter        | 自定义数值展示   | (value) => ReactNode | -      |      |
-| groupSeparator   | 设置千分位标识符 | string               | ,      |      |
-| precision        | 数值精度         | number               | -      |      |
-| prefix           | 设置数值的前缀   | string \| ReactNode  | -      |      |
-| suffix           | 设置数值的后缀   | string \| ReactNode  | -      |      |
-| title            | 数值的标题       | string \| ReactNode  | -      |      |
-| value            | 数值内容         | string \| number     | -      |      |
-| valueStyle       | 设置数值的样式   | CSSProperties        | -      |      |
-
-#### Statistic.Countdown
-
-| 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
-| format | 格式化倒计时展示，参考 [moment](http://momentjs.com/) | string | 'HH:mm:ss' |  |
-| onFinish | 倒计时完成时触发 | () => void | - |  |
-| prefix | 设置数值的前缀 | string \| ReactNode | - |  |
-| suffix | 设置数值的后缀 | string \| ReactNode | - |  |
-| title | 数值的标题 | string \| ReactNode | - |  |
-| value | 数值内容 | number \| moment | - |  |
-| valueStyle | 设置数值的样式 | CSSProperties | - |  |
+<!-- prettier-ignore -->
+<code src="./demo/basic.tsx">基本</code>
+<code src="./demo/unit.tsx">单位</code>
+<code src="./demo/animated.tsx">动画效果</code>
+<code src="./demo/card.tsx" background="grey">在卡片中使用</code>
+<code src="./demo/countdown.tsx">倒计时</code>

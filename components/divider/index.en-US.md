@@ -1,26 +1,20 @@
 ---
 category: Components
-type: Layout
 title: Divider
-cover: https://gw.alipayobjects.com/zos/alicdn/5swjECahe/Divider.svg
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*7sMiTbzvaDoAAAAAAAAAAAAADrJ8AQ/original
+coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*KPSEQ74PLg4AAAAAAAAAAAAADrJ8AQ/original
+demo:
+  cols: 2
+group:
+  title: Layout
+  order: 2
 ---
 
-A divider line separates different content.
+## Examples
 
-## When To Use
-
-- Divide sections of article.
-- Divide inline text and links such as the operation column of table.
-
-## API
-
-### Divider
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| className | className of container | string | - |  |
-| dashed | whether line is dashed | boolean | false |  |
-| orientation | position of title inside divider | `left` \| `right` \| `center` | `center` |  |
-| style | style object of container | CSSProperties | - |  |
-| type | direction type of divider | `horizontal` \| `vertical` | `horizontal` |  |
-| plain | divider text show as plain style | boolean | true | 4.2.0 |
+<!-- prettier-ignore -->
+<code src="./demo/horizontal.tsx">Horizontal</code>
+<code src="./demo/with-text.tsx">Divider with title</code>
+<code src="./demo/plain.tsx">Text without heading style</code>
+<code src="./demo/vertical.tsx">Vertical</code>
+<code src="./demo/customize-style.tsx" debug>Style Customization</code>
