@@ -71,7 +71,7 @@ const MyPanel = () => {
 ```
 
 ### 合成事件问题
-由于 React 基于事件委托实现的合成事件依赖 DOM 树根节点，在某些组件中(如 antd/popover) 可能无法捕获到其子组件冒泡上来的事件，这会导致这类组件的子组件们事件处理程序失效，建议使用 react-shadow-dom-retarget-events 手动将事件委托的根节点指定到上述的 container 组件中，例如
+由于 React 基于事件委托实现的合成事件依赖 DOM 树根节点，在某些组件中(如 antd/popover) 可能无法捕获到其子组件冒泡上来的事件，这会导致这类组件的子组件们事件处理程序失效，建议使用 [react-shadow-dom-retarget-events](https://www.npmjs.com/package/react-shadow-dom-retarget-events) 手动将事件委托的根节点指定到上述的 container 组件中，例如
 ```jsx
 import Popover from 'antd/lib/popover';
 import retargetEvents from 'react-shadow-dom-retarget-events';
