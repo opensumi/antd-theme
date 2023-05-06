@@ -24,6 +24,7 @@
     "pretty-quick": "pretty-quick",
     "site": "bisheng start -c ./site/bisheng.config.js",
     "build": "gulp color-theme && npm run site",
+    "postinstall": "patch-package",
     "start": "cross-env NODE_ENV=development concurrently \"gulp color-theme\" \"npm run site\""
   },
   "browserslist": [
@@ -58,7 +59,7 @@
     "@types/react": "^16.9.41",
     "@types/react-color": "^3.0.4",
     "@types/react-dom": "^16.9.5",
-    "antd": "4.4.0",
+    "antd": "4.22.8",
     "antd-img-crop": "^3.9.0",
     "babel-plugin-add-react-displayname": "^0.0.5",
     "bisheng": "^1.6.1",
@@ -83,6 +84,7 @@
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-npm-import": "^2.1.0",
     "lz-string": "^1.4.4",
+    "patch-package": "^6.5.1",
     "plugin-error": "^1.0.1",
     "prettier": "^2.0.1",
     "pretty-quick": "^2.0.0",
