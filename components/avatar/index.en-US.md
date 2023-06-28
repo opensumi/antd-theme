@@ -21,3 +21,4 @@ group:
 <code src="./demo/toggle-debug.tsx" debug>Calculate text style when hiding</code>
 <code src="./demo/responsive.tsx">Responsive Size</code>
 <code src="./demo/fallback.tsx" debug>Fallback</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

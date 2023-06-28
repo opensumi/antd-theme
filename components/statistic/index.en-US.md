@@ -16,3 +16,4 @@ demo:
 <code src="./demo/animated.tsx">Animated number</code>
 <code src="./demo/card.tsx" background="grey">In Card</code>
 <code src="./demo/countdown.tsx">Countdown</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

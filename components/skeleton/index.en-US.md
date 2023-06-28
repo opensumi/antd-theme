@@ -15,3 +15,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*VcjGQLSrYdcAAA
 <code src="./demo/element.tsx">Button/Avatar/Input/Image/Node</code>
 <code src="./demo/children.tsx">Contains sub component</code>
 <code src="./demo/list.tsx">List</code>
+<code src="./demo/componentToken.tsx" debug>Custom component token</code>

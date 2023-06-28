@@ -19,6 +19,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*ylFATY6w-ygAAA
 <code src="./demo/layout-can-wrap.tsx">label can wrap</code>
 <code src="./demo/warning-only.tsx">No block rule</code>
 <code src="./demo/useWatch.tsx">Watch Hooks</code>
+<code src="./demo/validate-only.tsx">Validate Only</code>
 <code src="./demo/form-item-path.tsx">Path Prefix</code>
 <code src="./demo/dynamic-form-item.tsx">Dynamic Form Item</code>
 <code src="./demo/dynamic-form-items.tsx">Dynamic Form nest Items</code>

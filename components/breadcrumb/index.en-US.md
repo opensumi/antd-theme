@@ -18,3 +18,4 @@ demo:
 <code src="./demo/overlay.tsx">Bread crumbs with drop down menu</code>
 <code src="./demo/separator-component.tsx">Configuring the Separator Independently</code>
 <code src="./demo/debug-routes.tsx">Debug Routes</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

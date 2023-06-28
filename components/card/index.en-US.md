@@ -19,3 +19,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*a-8zR6rrupgAAA
 <code src="./demo/inner.tsx">Inner card</code>
 <code src="./demo/tabs.tsx">With tabs</code>
 <code src="./demo/meta.tsx">Support more content configuration</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

@@ -20,3 +20,4 @@ demo:
 <code src="./demo/right.tsx">右侧时间轴点</code>
 <code src="./demo/label.tsx">标签</code>
 <code src="./demo/wireframe.tsx" debug>线框风格</code>
+<code src="./demo/component-token.tsx" debug>组件 Token</code>

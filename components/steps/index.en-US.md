@@ -27,3 +27,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*cFsBQLA0b7UAAA
 <code src="./demo/steps-in-steps.tsx" debug>Steps inside Steps</code>
 <code src="./demo/inline.tsx">Inline Steps</code>
 <code src="./demo/wireframe.tsx" debug>Wireframe</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

@@ -27,3 +27,4 @@ demo:
 <code src="./demo/selectable.tsx">Selectable Menu</code>
 <code src="./demo/menu-full.tsx" debug>Menu full styles</code>
 <code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>
+<code src="./demo/icon-debug.tsx" debug>Icon debug</code>
