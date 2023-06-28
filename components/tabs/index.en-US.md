@@ -25,3 +25,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*8HMoTZUoSGoAAA
 <code src="./demo/custom-tab-bar-node.tsx">Draggable Tabs</code>
 <code src="./demo/animated.tsx" debug>Animated</code>
 <code src="./demo/nest.tsx" debug>Nest</code>
+<code src="./demo/component-token.tsx" debug>component Token</code>

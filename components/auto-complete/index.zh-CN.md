@@ -21,5 +21,6 @@ demo:
 <code src="./demo/certain-category.tsx">查询模式 - 确定类目</code>
 <code src="./demo/uncertain-category.tsx">查询模式 - 不确定类目</code>
 <code src="./demo/status.tsx">自定义状态</code>
+<code src="./demo/borderless.tsx">无边框</code>
 <code src="./demo/form-debug.tsx" debug>在 Form 中 Debug</code>
 <code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>

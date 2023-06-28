@@ -14,3 +14,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*-p-wQLik200AAA
 <code src="./demo/card.tsx" clientOnly>Card</code>
 <code src="./demo/select.tsx" clientOnly>Selectable Calendar</code>
 <code src="./demo/customize-header.tsx" clientOnly>Customize Header</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

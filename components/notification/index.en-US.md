@@ -13,7 +13,6 @@ demo:
 
 <!-- prettier-ignore -->
 <code src="./demo/hooks.tsx">Hooks usage (recommended)</code>
-<code src="./demo/basic.tsx">Basic</code>
 <code src="./demo/duration.tsx">Duration after which the notification box is closed</code>
 <code src="./demo/with-icon.tsx">Notification with icon</code>
 <code src="./demo/with-btn.tsx">Custom close button</code>
@@ -21,4 +20,5 @@ demo:
 <code src="./demo/placement.tsx">Placement</code>
 <code src="./demo/custom-style.tsx">Customized style</code>
 <code src="./demo/update.tsx">Update Message Content</code>
+<code src="./demo/basic.tsx">Static Method (deprecated)</code>
 <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>

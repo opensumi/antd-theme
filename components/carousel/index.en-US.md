@@ -15,3 +15,4 @@ demo:
 <code src="./demo/position.tsx">Position</code>
 <code src="./demo/autoplay.tsx">Scroll automatically</code>
 <code src="./demo/fade.tsx">Fade in</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

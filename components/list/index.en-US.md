@@ -19,3 +19,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*tBzwQ7raKX8AAA
 <code src="./demo/responsive.tsx">Responsive grid list</code>
 <code src="./demo/infinite-load.tsx">Scrolling loaded</code>
 <code src="./demo/virtual-list.tsx">virtual list</code>
+<code src="./demo/component-token.tsx" debug>custom component token</code>

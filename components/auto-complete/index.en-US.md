@@ -20,5 +20,6 @@ demo:
 <code src="./demo/certain-category.tsx">Lookup-Patterns - Certain Category</code>
 <code src="./demo/uncertain-category.tsx">Lookup-Patterns - Uncertain Category</code>
 <code src="./demo/status.tsx">Status</code>
+<code src="./demo/borderless.tsx">Borderless</code>
 <code src="./demo/form-debug.tsx" debug>Debug in Form</code>
 <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>

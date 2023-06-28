@@ -20,3 +20,4 @@ demo:
 <code src="./demo/autoSize.tsx">autoSize</code>
 <code src="./demo/status.tsx">Status</code>
 <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

@@ -22,3 +22,5 @@ demo:
 <code src="./demo/borderless.tsx">borderless</code>
 <code src="./demo/borderlessLayout.tsx" debug>borderless in layout</code>
 <code src="./demo/customize.tsx" debug>Customize close</code>
+<code src="./demo/draggable.tsx">Draggable Tag</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>

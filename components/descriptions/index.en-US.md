@@ -17,3 +17,4 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*d27AQJrowGAAAA
 <code src="./demo/vertical.tsx">Vertical</code>
 <code src="./demo/vertical-border.tsx">Vertical border</code>
 <code src="./demo/style.tsx" debug>Customize label & wrapper style</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>
