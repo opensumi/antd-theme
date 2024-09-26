@@ -1,10 +1,10 @@
 {
   "name": "@opensumi/antd-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OpenSumi theme for antd4",
   "keywords": [
-    "antd custom theme",
-    "OpenSumi theme"
+    "Antd Custom Theme",
+    "OpenSumi Theme"
   ],
   "homepage": "https://github.com/opensumi/antd-theme",
   "repository": {
